@@ -254,7 +254,7 @@ body {
   border: none;
 }
 
-.intro #map {
+.intro .map {
   padding-right: 136px;
 }
 
@@ -295,45 +295,108 @@ body {
   font-size: 600;
 }
 
-#map {
+.map {
   padding-top: 70px;
 }
 
-#map svg text {
+.map svg text {
   pointer-events: all;
 }
 
-#map svg g.grouped {
+.map svg g.grouped {
   cursor: pointer;
 }
 
-#map svg g.grouped path {
+.map svg g.grouped path {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   fill: transparent;
 }
 
-#map svg g.grouped text {
+.map svg g.grouped text {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-#map svg g.grouped:hover path {
+.map svg g.grouped:hover path {
   fill: #FFB900;
 }
 
-#map svg g.grouped:hover text {
+.map svg g.grouped:hover text {
   font-weight: bold;
 }
 
-#map svg g.grouped:hover ellipse {
+.map svg g.grouped:hover ellipse {
   fill: rgba(232, 17, 35, 0.2);
   stroke: #E81123;
 }
 
-#map svg g.grouped:hover circle {
+.map svg g.grouped:hover circle {
   fill: rgba(232, 17, 35, 0.2);
   stroke: #E81123;
+}
+
+.map_popup {
+  padding: 15px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.map_popup.show {
+  z-index: 100;
+  opacity: 1;
+}
+
+.map_popup .title {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 21px;
+  color: #3c3c3c;
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+.map_popup .title b {
+  color: #0078D4;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.map_popup .popup-table {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 21px;
+  color: #666;
+  width: 100%;
+}
+
+.map_popup .popup-table td:nth-child(2) {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 21px;
+  color: #0078d4;
+}
+
+.map_popup::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+  bottom: -13px;
 }
 
 .main_nav.nav {

@@ -73,4 +73,27 @@ $(document).ready(function () {
             }
         }
     })
+
+
+    $('.js_popup').click(function (e) {
+
+        console.log(e.originalEvent.layerX, e.originalEvent.layerY)
+
+        let popup = $('.map_popup');
+        let regionName = $(e.delegateTarget).attr('data-name');
+
+        var left = (e.originalEvent.layerX - popup.width() / 2 - 15) + 'px';
+        var top = (e.originalEvent.layerY - popup.height() - 50) + 'px';
+        popup.css({
+            top: top,
+            left: left
+        })
+        popup.find('.title b').text(regionName);
+        popup.addClass('show');
+
+        // setTimeout(function () {
+        //     popup.removeClass('show');
+        // }, 10000)
+
+    })
 })
