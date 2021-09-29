@@ -1,0 +1,250 @@
+body {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.app {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.header .container {
+  position: relative;
+}
+
+.header__logo {
+  float: left;
+  display: table;
+}
+
+.header__logo .name {
+  display: table-cell;
+  height: 82px;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 35%;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 18px;
+  color: #f8f8f8;
+  text-transform: uppercase;
+}
+
+.header__nav {
+  float: right;
+}
+
+.header__nav .nav {
+  height: 82px;
+  vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header__nav .nav-item.dropdown > .nav-link {
+  background: transparent;
+}
+
+.header__nav .nav-item.dropdown .dropdown-menu a {
+  color: #666;
+  padding: 5px 10px;
+}
+
+.header__nav .nav-link {
+  padding: 16px 28px;
+  background: none;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #f8f8f8;
+}
+
+.header__nav .nav-link.register {
+  border-radius: 0;
+  border: 2px solid #FFB900;
+}
+
+.header__nav .nav-link:hover {
+  background: none;
+}
+
+.header__nav .nav-link:hover span.name {
+  border-bottom: 2px solid #FFB900;
+}
+
+.header__nav .nav-link:focus {
+  background: none;
+}
+
+.header .mobile__btn {
+  position: absolute;
+  right: 100%;
+  top: 25px;
+}
+
+.header .mobile__btn .btn {
+  background: none;
+}
+
+.header .mobile__btn .btn img {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .mobile__btn .btn:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header .mobile__btn .btn:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .spec-view__btn {
+  position: absolute;
+  left: 100%;
+  top: 25px;
+}
+
+.header .spec-view__btn .btn {
+  background: none;
+}
+
+.header .spec-view__btn .btn img {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .spec-view__btn .btn:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header .spec-view__btn .btn:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer {
+  background: #333333;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.footer__nav {
+  width: calc(100% + 32px);
+}
+
+.footer__nav .nav__item {
+  width: 25%;
+  float: left;
+  padding-right: 32px;
+}
+
+.footer__nav .nav__item h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+  color: #a6a6a6;
+  margin-bottom: 21px;
+}
+
+.footer__nav .nav__item .nav-item {
+  margin-bottom: 15px;
+}
+
+.footer__nav .nav__item .nav-item.icon_place {
+  padding-left: 28px;
+  background: url("./../image/icon_place.svg") no-repeat 0/11px;
+}
+
+.footer__nav .nav__item .nav-item.icon_phone {
+  padding-left: 28px;
+  background: url("./../image/icon_phone (2).svg") no-repeat 0/18px;
+}
+
+.footer__nav .nav__item .nav-item.icon_email {
+  padding-left: 28px;
+  background: url("./../image/icon_email.svg") no-repeat 0/18px;
+}
+
+.footer__nav .nav__item .nav-link {
+  padding: 0;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #f4f4f4;
+}
+
+.footer__nav .nav__item .nav-link:hover {
+  text-decoration: underline;
+  background: none;
+  color: #c1c1c1;
+}
+
+.footer__logo {
+  padding-top: 50px;
+  padding-bottom: 37px;
+}
+
+.footer__bottom {
+  color: white;
+}
+
+.footer__bottom div:last-of-type {
+  margin-right: 0;
+}
+
+.footer__bottom .copyright {
+  width: calc(100% / 12 * 3);
+  float: left;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 16px;
+  color: #c8c8c8;
+}
+
+.footer__bottom .info {
+  width: calc(100% / 12 * 5);
+  float: left;
+  padding-right: 70px;
+  padding-left: 70px;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 16px;
+  color: #c8c8c8;
+}
+
+.footer__bottom .warning {
+  width: calc(100% / 12 * 4);
+  float: left;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 17px;
+  text-align: left;
+  color: #c8c8c8;
+}
+/*# sourceMappingURL=style2.css.map */

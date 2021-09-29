@@ -1,0 +1,136 @@
+.tips {
+    padding-top: 40px;
+    background : url('./../image/tips_bg.jpg')no-repeat 0 /cover;
+
+    &__title {
+        font-weight   : bold;
+        font-size     : 32px;
+        letter-spacing: -0.01em;
+        line-height   : 39px;
+        color         : #f8f8f8;
+        text-transform: uppercase;
+        margin-top    : 40px;
+        margin-bottom : 18px;
+    }
+
+    &__subtitle {
+        font-size     : 18px;
+        letter-spacing: -0.01em;
+        color         : #e8e8e8;
+
+
+    }
+
+    &__link {
+        padding        : 12px 33px 12px 54px;
+        text-decoration: none;
+        display        : inline-block;
+        margin-bottom  : 40px;
+        margin-top     : 30px;
+        background     : #FFB900 url('./../image/icon_tips-link.svg')no-repeat 35px 50% /13px;
+        font-size      : 12px;
+        letter-spacing : -0.01em;
+        color          : #333;
+    }
+
+    & .more_link {
+        position      : absolute;
+        top           : 0;
+        right         : 0;
+        width         : 91px;
+        font-size     : 16px;
+        letter-spacing: -0.01em;
+        line-height   : 18px;
+        text-align    : right;
+        color         : #e8e8e8;
+        padding-top   : 46PX;
+
+        &::before {
+            content      : '';
+            display      : block;
+            width        : 36px;
+            height       : 36px;
+            border-radius: 540%;
+            background   : #FFB900 url('./../image/icon_tips-more-link.svg')no-repeat center/16px;
+            position     : absolute;
+            top          : 0;
+            right        : 0;
+        }
+    }
+
+    &-carousel {
+        border-top: 1px solid #C7E0F4;
+
+        & .item {
+            padding        : 20px;
+            padding-bottom : 36px;
+            display        : inline-block;
+            text-decoration: none;
+            transition     : all 0.3s linear;
+            width          : 100%;
+
+            &:hover {
+                background: #333333;
+
+            }
+
+            & .number {
+                font-weight   : 600;
+                font-size     : 16px;
+                color         : #e8e8e8;
+                letter-spacing: -0.01em;
+                margin-bottom : 15px;
+            }
+
+            & .title {
+                font-size     : 20px;
+                letter-spacing: -0.01em;
+                line-height   : 25px;
+                color         : #fff;
+                padding-right : 61px;
+                height        : 52px;
+                overflow      : hidden;
+                width         : 240px;
+            }
+        }
+
+        & .owl-nav {
+            margin: 0;
+
+            // position: absolute;
+            // top: 0;
+            & button.owl-prev {
+                position     : absolute;
+                bottom       : calc(100% + 25px);
+                right        : 52px;
+                width        : 40px;
+                height       : 40px;
+                margin       : 0;
+                border-radius: 0;
+                transition   : all 0.3s linear;
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            & button.owl-next {
+                position: absolute;
+                bottom  : calc(100% + 25px);
+                right        : 0;
+                width        : 40px;
+                height       : 40px;
+                background   : transparent;
+                margin       : 0;
+                border-radius: 0;
+                transition   : all 0.3s linear;
+
+                &:hover {
+                    background: no-repeat;
+
+                }
+            }
+        }
+    }
+
+}

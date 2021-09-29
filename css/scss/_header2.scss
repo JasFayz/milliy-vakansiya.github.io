@@ -1,0 +1,404 @@
+.header {
+    & .container {
+        position     : relative;
+        padding-left : 0;
+        padding-right: 0;
+    }
+
+    &__top {
+        .nav {
+
+
+            &>li {
+                padding-top      : 14px;
+                padding-bottom   : 14px;
+                margin-right     : 40px;
+                position         : relative;
+                // display       : inline-block;
+                float            : right;
+                margin-right     : 40px;
+
+                &:first-child {
+                    margin-right: 0;
+
+                    &>a {
+                        padding-left: 0;
+                    }
+                }
+
+                &+li {
+                    margin-left: 0;
+                }
+
+
+
+                &>a {
+                    padding       : 0;
+                    font-size     : 16px;
+                    line-height   : 21px;
+                    color         : #0078D4;
+                    display       : table-cell;
+                    vertical-align: middle;
+                    padding-left  : 30px;
+
+                    & span {
+                        transition   : border-bottom 0.3s linear;
+                        border-bottom: 2px solid transparent;
+                    }
+
+                    &:hover {
+                        background: none;
+
+                        & span {
+                            border-bottom: 2px solid #FFB900;
+                        }
+                    }
+
+                    & .icon {
+                        position : absolute;
+                        top      : 50%;
+                        left     : 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            &-lang {
+                & .nav-link {
+                    border-bottom: 2px solid #FFB900;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        & .radio-inline {
+            padding-top   : 14px;
+            padding-bottom: 14px;
+            margin-right  : 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            & input {
+                position: absolute;
+                opacity : 0;
+
+                &:checked+label {
+                    color: #707070;
+                }
+
+                &:checked+label::before {
+                    border-color: #707070;
+                }
+
+                &:checked+label::after {
+                    content: '';
+                }
+            }
+
+            & label {
+                margin-left  : 10px;
+                cursor       : pointer;
+                font-weight  : normal;
+                color        : #0078D4;
+                margin-bottom: 0;
+
+                &::before {
+                    content      : '';
+                    display      : block;
+                    width        : 16px;
+                    height       : 16px;
+                    border-radius: 50%;
+                    position     : absolute;
+                    border       : 1px solid #0078D4;
+                    left         : 0;
+                    top          : 50%;
+                    transform    : translateY(-50%);
+                }
+
+                &::after {
+                    content      : none;
+                    display      : block;
+                    width        : 10px;
+                    height       : 10px;
+                    border-radius: 50%;
+                    background   : #707070;
+                    position     : absolute;
+                    top          : 50%;
+                    left         : 3px;
+                    transform    : translateY(-50%);
+                }
+            }
+        }
+
+        & .dropdown-menu {
+            min-width: auto;
+
+            & a {
+                font-size  : 16px;
+                line-height: 21px;
+                color      : #0078D4;
+            }
+        }
+    }
+
+    &__middle {
+        & .navbar {
+            background    : url('./../image/banner.png')no-repeat 0 70% /cover;
+            border        : none;
+            border-radius : 0;
+            padding-top   : 26px;
+            padding-bottom: 29px;
+            margin-bottom : 0;
+            transition    : all 0.3s linear;
+
+            & .logo {
+                height         : 82px;
+                display        : table;
+                text-decoration: none;
+                float          : left;
+                width          : 208px;
+
+                &__icon {
+                    display       : table-cell;
+                    vertical-align: middle;
+                    padding-right : 12px;
+                    position      : relative;
+
+                    &::before {
+                        content   : '';
+                        display   : block;
+                        width     : 2px;
+                        height    : 64px;
+                        background: url('./../image/logo_flag.png') no-repeat 0/cover;
+                        position  : absolute;
+                        top       : 50%;
+                        right     : 0;
+                        transform : translateY(-50%);
+                    }
+                }
+
+                &__name {
+                    display          : table-cell;
+                    vertical-align   : middle;
+                    color            : white;
+                    // padding-right : 25%;
+                    padding-left     : 10px;
+                    font-family      : "Segoe UI";
+                    font-weight      : 600;
+                    font-size        : 16px;
+                    letter-spacing   : -0.01em;
+                    line-height      : 18px;
+                    text-transform   : uppercase;
+                    color            : #f8f8f8;
+
+                }
+            }
+
+            & .nav {
+                float  : right;
+                height : 82px;
+                display: table;
+
+                &-item {
+                    display       : table-cell;
+                    vertical-align: middle;
+                    padding-right : 70px;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+                &-link {
+                    // padding       : 16px 28px;
+                    transition     : all 0.3s linear;
+                    font-family    : "Segoe UI";
+                    font-weight    : bold;
+                    font-size      : 16px;
+                    letter-spacing : -0.02em;
+                    text-transform : uppercase;
+                    color          : #f8f8f8;
+                    padding-bottom : 5px;
+                    border-bottom  : 2px solid transparent;
+                    text-decoration: none;
+
+                    &:hover {
+                        border-bottom: 2px solid #FFB900;
+
+                    }
+
+                    &.register {
+                        padding       : 16px 28px 16px 49px;
+                        border        : 1px solid white;
+                        text-transform: initial;
+                        font-weight   : normal;
+                        background    : url('./../image/icon_user.svg')no-repeat 28px center /16px;
+                        position      : relative;
+
+                        &::before {
+                            content: '';
+
+                            display   : block;
+                            position  : absolute;
+                            width     : calc(100% - 50px);
+                            height    : 2px;
+                            background: transparent;
+                            left      : 50%;
+                            bottom    : 10px;
+                            transform : translateX(-50%);
+                            transition: all 0.3s linear;
+                        }
+
+                        &:hover {
+                            &::before {
+                                background: #FFB900;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        & .mobile__button {
+            position : absolute;
+            top      : 42px;
+            transform: translateY(-50%);
+            right    : calc(100% + 40px);
+
+            &>.btn {
+                background   : transparent;
+                border-radius: 0;
+                border       : none;
+
+                & img {
+                    transition: all 0.3s linear;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+
+                &:focus {
+                    border    : 0;
+                    outline   : none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        & .spec-view__button {
+            position : absolute;
+            top      : 42px;
+            transform: translateY(-50%);
+            left     : calc(100% + 40px);
+
+            &>.btn {
+                background   : transparent;
+                border-radius: 0;
+                border       : none;
+
+                & img {
+                    transition: all 0.3s linear;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+
+                &:focus {
+                    border    : 0;
+                    outline   : none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+
+    &__bottom {
+        border-bottom : 1px solid #EAEAEA;
+        padding-top   : 10px;
+        padding-bottom: 10px;
+
+        & .breadcrumb {
+            background   : none;
+            margin-bottom: 0;
+            padding      : 0;
+            float        : left;
+            display      : table;
+
+
+            &-item {
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 14px;
+                letter-spacing: -0.02em;
+                line-height   : 21px;
+                color         : #767676;
+                display       : table-cell;
+                vertical-align: middle;
+                height        : 38px;
+
+                &+li::before {
+                    padding-right: 0;
+                }
+
+                &:first-child {
+                    & a {
+                        padding-left: 26px;
+                        background  : url('./../image/icon_home.svg') no-repeat 0 /15px;
+                    }
+                }
+
+                &.active {
+                    font-weight: 600;
+                }
+            }
+
+            & a {
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 14px;
+                letter-spacing: -0.02em;
+                line-height   : 21px;
+                color         : #767676;
+
+            }
+        }
+
+        & .search {
+            float: right;
+
+            & .btn {
+                background: transparent;
+                border    : none;
+
+                &:focus {
+                    background: none;
+                    border    : none;
+                    outline   : none;
+                    box-shadow: none;
+                }
+
+                & img {
+                    transition: all 0.3s linear;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,246 @@
+.intro {
+    min-height : 900px;
+    background : url('./../image/intro_bg.png')no-repeat 0/cover;
+    padding-top: 139px;
+
+
+    & .tab-form {
+        padding-top: 135px;
+
+        & .nav>li {
+            &.active {
+                & a {
+                    background: #FFFFFF;
+                    border    : none;
+                    color     : #0078D4;
+
+                    &>span {
+                        border-bottom: 2px solid #FFB900;
+                    }
+                }
+            }
+
+            &>a {
+                border-radius: 0;
+                background   : #3C3C3C;
+                border       : none;
+                color        : #D0D0D0;
+
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 16px;
+                letter-spacing: -0.01em;
+                margin-bottom : 0;
+
+                &:hover {
+                    border: none;
+
+                    &>span {
+                        border-bottom: 2px solid #FFB900;
+
+                    }
+                }
+            }
+        }
+
+        & .tab-content {
+            background: #FFFFFF;
+            padding   : 25px 25px 10px 25px;
+
+            & select.form-control {
+                height          : 46px;
+                border-radius   : 0;
+                background-color: #F8F8F8;
+                border          : 1px solid #EAEAEA;
+                box-shadow      : inset 0 3px 6px rgba($color: #000000, $alpha: .25);
+                appearance      : none;
+                color           : #0078D4;
+                padding-right   : 28px;
+                background      : url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 15px) 50%/15px;
+                font-family     : "Segoe UI";
+                font-weight     : normal;
+                font-size       : 16px;
+                letter-spacing  : -0.02em;
+
+                &.place {
+                    font-family   : "Segoe UI";
+                    font-weight   : normal;
+                    font-size     : 16px;
+                    letter-spacing: -0.02em;
+                    color         : #666;
+
+                    padding-left: 32px;
+                    background  : url('./../image/icon_place-blue.svg')no-repeat 10px 50% /15px, url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 15px) 50%/15px;
+                }
+
+
+            }
+
+            & .links {
+                & .btn-link {
+                    padding     : 0 10px;
+                    border-right: 1px solid #71AFE5;
+                    color       : #0078D4;
+                    line-height : 42px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        border: none;
+                    }
+
+
+                }
+            }
+
+            & .btn {
+                padding       : 12px 40px 12px 60px;
+                border-radius : 0;
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 12px;
+                letter-spacing: -0.02em;
+                text-align    : left;
+                color         : #f8f8f8;
+                background    : #0778D4 url('./../image/icon_search-white.svg')no-repeat 40px center /14px;
+                border        : none;
+
+            }
+        }
+
+    }
+
+    #map {
+        padding-right: 136px;
+    }
+
+
+    .statistic {
+        padding-top   : 33px;
+        padding-bottom: 132px;
+
+        & .item {
+            padding: 22px 58px 22px 37px;
+
+            & .icon {
+                // float: left;
+                display       : table-cell;
+                vertical-align: middle;
+                padding-right : 15px;
+                width         : 60px;
+                height        : 55px;
+
+                & img {
+                    width: 100%;
+                }
+
+            }
+
+            & .info {
+                display       : table-cell;
+                vertical-align: middle;
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 16px;
+                letter-spacing: -0.01em;
+                text-align    : center;
+                color         : #f8f8f8;
+
+
+                & .number {
+                    font-size: 37px;
+                    font-size: 600;
+                }
+            }
+        }
+    }
+}
+
+#map {
+    padding-top: 70px;
+
+    & svg {
+        & text {
+            pointer-events: all;
+        }
+
+        & g.grouped {
+            cursor: pointer;
+
+            & path {
+                transition: all 0.3s linear;
+                fill      : transparent;
+            }
+
+            & text {
+                transition: all 0.3s linear;
+            }
+
+            &:hover {
+                & path {
+                    fill: #FFB900;
+                }
+
+                & text {
+                    font-weight: bold;
+                }
+
+                & ellipse {
+                    fill  : rgba($color: #E81123, $alpha: .20);
+                    stroke: #E81123;
+                }
+
+                & circle {
+                    fill  : rgba($color: #E81123, $alpha: .20);
+                    stroke: #E81123;
+                }
+
+            }
+        }
+    }
+}
+
+.main_nav.nav {
+    display      : table;
+    text-align   : center;
+    // width     : 100%;
+    margin       : 0 auto;
+
+    & .nav-item {
+
+        display: table-cell;
+        padding: 0 35px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    & .nav-link {
+        // padding       : 16px 28px;
+        transition     : all 0.3s linear;
+        font-family    : "Segoe UI";
+        font-weight    : bold;
+        font-size      : 16px;
+        letter-spacing : -0.02em;
+        text-transform : uppercase;
+        color          : #f8f8f8;
+        padding-bottom : 5px;
+        border-bottom  : 2px solid transparent;
+        text-decoration: none;
+        border-radius  : 0;
+        padding        : 0;
+
+
+
+        &:hover {
+            background   : none;
+            border-bottom: 2px solid #FFB900;
+
+        }
+
+
+    }
+}

@@ -1,0 +1,125 @@
+.footer {
+    background    : #333333;
+    padding-top   : 60px;
+    padding-bottom: 35px;
+
+    &__nav {
+        width: calc(100% + 32px);
+
+        & .nav__item {
+            width        : 25%;
+            float        : left;
+            padding-right: 32px;
+
+
+            & h1 {
+                font-family   : "Segoe UI";
+                font-weight   : bold;
+                font-size     : 18px;
+                letter-spacing: -0.02em;
+                line-height   : 20px;
+                color         : #a6a6a6;
+                margin-bottom : 21px;
+            }
+
+            & .nav {
+
+
+                &-item {
+                    margin-bottom: 15px;
+
+                    &.icon_place {
+                        padding-left: 28px;
+                        background  : url('./../image/icon_place.svg')no-repeat 0 /11px;
+                    }
+
+                    &.icon_phone {
+                        padding-left: 28px;
+                        background  : url('./../image/icon_phone (2).svg')no-repeat 0 /18px;
+                    }
+
+                    &.icon_email {
+                        padding-left: 28px;
+                        background  : url('./../image/icon_email.svg')no-repeat 0 /18px;
+
+                    }
+                }
+
+                &-link {
+                    padding       : 0;
+                    font-family   : "Segoe UI";
+                    font-weight   : normal;
+                    font-size     : 16px;
+                    letter-spacing: -0.02em;
+                    color         : #f4f4f4;
+
+
+                    &:hover {
+                        text-decoration: underline;
+
+                        background: none;
+                        color     : darken($color: #f4f4f4, $amount: 20);
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+        padding-top   : 50px;
+        padding-bottom: 37px;
+    }
+
+    &__bottom {
+        color: white;
+
+
+        & div:last-of-type {
+            margin-right: 0;
+        }
+
+        & .copyright {
+            width: calc(100% / 12 * 3);
+            float: left;
+
+            font-family   : "Segoe UI";
+            font-weight   : normal;
+            font-size     : 14px;
+            letter-spacing: -0.02em;
+            line-height   : 16px;
+
+            color: #c8c8c8;
+
+
+        }
+
+        & .info {
+            width        : calc(100% / 12 * 5);
+            float        : left;
+            padding-right: 70px;
+            padding-left : 70px;
+
+            font-family   : "Segoe UI";
+            font-weight   : 300;
+            font-size     : 14px;
+            letter-spacing: -0.02em;
+            line-height   : 16px;
+            color         : #c8c8c8;
+
+
+        }
+
+        & .warning {
+            width: calc(100% / 12 * 4);
+            float: left;
+
+            font-family   : "Segoe UI";
+            font-weight   : 300;
+            font-size     : 14px;
+            letter-spacing: -0.02em;
+            line-height   : 17px;
+            text-align    : left;
+            color         : #c8c8c8;
+        }
+    }
+}

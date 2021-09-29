@@ -1,0 +1,30 @@
+body {
+    font-family   : "Segoe UI";
+    font-weight   : normal;
+    font-size     : 16px;
+    letter-spacing: -0.02em;
+}
+
+.app {
+    position: relative;
+    overflow: hidden;
+}
+
+.section__title {
+    font-family   : "Segoe UI";
+    font-weight   : bold;
+    font-size     : 24px;
+    letter-spacing: -0.01em;
+    line-height   : 17px;
+    color         : #333;
+    text-transform: uppercase;
+    text-align    : center;
+}
+
+
+@import './header';
+@import './intro';
+@import './vacancies_section';
+@import './tips';
+@import './employer';
+@import './footer';

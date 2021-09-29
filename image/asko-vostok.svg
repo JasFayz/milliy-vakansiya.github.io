@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152.711" height="66.914" viewBox="0 0 152.711 66.914">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.798" y1="0.095" x2="0.265" y2="1.012" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00adbc"/>
+      <stop offset="1" stop-color="#00717b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.158" y1="0.406" x2="1.091" y2="0.554" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00adbc"/>
+      <stop offset="1" stop-color="#74cddb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.798" y1="1.012" x2="0.265" y2="0.095" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.158" y1="0.554" x2="1.091" y2="0.406" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Сгруппировать_9945" data-name="Сгруппировать 9945" transform="translate(-2433.289 -1296.76)">
+    <g id="Сгруппировать_9888" data-name="Сгруппировать 9888" transform="translate(2433.289 1296.76)">
+      <g id="Сгруппировать_58" data-name="Сгруппировать 58" transform="translate(64.443 0)">
+        <path id="Контур_109" data-name="Контур 109" d="M11271.123,12345.892h23.258l-32.514,66.91h-23.246Z" transform="translate(-11206.112 -12345.892)" fill="url(#linear-gradient)"/>
+        <path id="Контур_110" data-name="Контур 110" d="M9862.775,12345.892h-23.258l32.508,66.91h23.25Z" transform="translate(-9839.518 -12345.892)" fill="url(#linear-gradient-2)"/>
+      </g>
+      <path id="Контур_111" data-name="Контур 111" d="M8793.118,12412.824h23.25l-32.5-66.914H8760.61Z" transform="translate(-8728.102 -12345.91)" fill="url(#linear-gradient-3)"/>
+      <path id="Контур_112" data-name="Контур 112" d="M7384.741,12412.824H7361.49l32.5-66.914h23.254Z" transform="translate(-7361.49 -12345.91)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

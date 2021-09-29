@@ -1,0 +1,18 @@
+
+
+body {
+    font-family   : "Segoe UI";
+    font-weight   : normal;
+    font-size     : 16px;
+    letter-spacing: -0.02em;
+}
+
+.app {
+    position   : relative;
+    // overflow: hidden;
+}
+
+@import './header';
+
+@import './footer';
+
