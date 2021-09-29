@@ -15,7 +15,7 @@ $(document).ready(function () {
         autoWidth: true,
         dots: false,
         nav: true,
-        navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='16'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='16'></div>"],
+        navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
         responsive: {
             600: {
                 items: 6

@@ -174,9 +174,9 @@ body {
 
 .intro .tab-form .nav > li > a {
   border-radius: 0;
-  background: #3C3C3C;
+  background: #004578;
   border: none;
-  color: #D0D0D0;
+  color: #C7E0F4;
   font-family: "Segoe UI";
   font-weight: normal;
   font-size: 16px;
@@ -227,22 +227,23 @@ body {
 }
 
 .intro .tab-form .tab-content .links .btn-link {
-  padding: 0 10px;
-  border-right: 1px solid #71AFE5;
+  padding: 0 0 4px 0;
   color: #0078D4;
   line-height: 42px;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+.intro .tab-form .tab-content .links .btn-link:hover {
+  border-bottom: 1px solid #C7E0F4;
 }
 
 .intro .tab-form .tab-content .links .btn-link:first-child {
   padding-left: 0;
 }
 
-.intro .tab-form .tab-content .links .btn-link:last-child {
-  border: none;
-}
-
 .intro .tab-form .tab-content .btn {
-  padding: 12px 40px 12px 60px;
+  padding: 12px 43px 12px 75px;
   border-radius: 0;
   font-family: "Segoe UI";
   font-weight: normal;
@@ -250,8 +251,14 @@ body {
   letter-spacing: -0.02em;
   text-align: left;
   color: #f8f8f8;
-  background: #0778D4 url("./../image/icon_search-white.svg") no-repeat 40px center/14px;
+  background: #0778D4 url("./../image/icon_search-white.svg") no-repeat 45px 50%/18px;
   border: none;
+}
+
+.intro .tab-form .tab-content .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .intro .map {
@@ -436,7 +443,7 @@ body {
 }
 
 .vacancies__section {
-  background: #EFF6FC;
+  background: #DEECF9;
   padding-bottom: 50px;
 }
 
@@ -489,7 +496,7 @@ body {
 }
 
 .vacancies__tab .tab-content .card {
-  padding: 20px 65px 25px 65px;
+  padding: 20px 10px 25px 10px;
   text-align: center;
   display: block;
   text-decoration: none;
@@ -497,6 +504,7 @@ body {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   margin-right: 32px;
+  position: relative;
 }
 
 .vacancies__tab .tab-content .card:hover {
@@ -506,6 +514,17 @@ body {
 
 .vacancies__tab .tab-content .card:hover .name {
   color: #F8F8F8;
+}
+
+.vacancies__tab .tab-content .card .info {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url("./../image/icon_info.svg") no-repeat 0/cover;
 }
 
 .vacancies__tab .tab-content .card .icon {
@@ -520,7 +539,7 @@ body {
   letter-spacing: -0.01em;
   line-height: 25px;
   text-align: center;
-  color: #3c3c3c;
+  color: #F8F8F8;
   height: 49px;
   overflow: hidden;
 }
@@ -554,6 +573,9 @@ body {
   color: #333;
   text-transform: uppercase;
   margin-bottom: 5px;
+  padding-right: 15px;
+  height: 42px;
+  overflow: hidden;
 }
 
 .vacancies__benefits .content .link {
@@ -750,11 +772,13 @@ body {
   border-radius: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  background: white;
+  -webkit-box-shadow: -14px 0px 10px 12px white;
+          box-shadow: -14px 0px 10px 12px white;
 }
 
 .type-slider .owl-nav button.owl-prev:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(50%, #fff), to(#fff));
-  background: linear-gradient(to right, transparent 30%, #fff 50%, #fff 100%);
+  background: white;
 }
 
 .type-slider .owl-nav button.owl-next {
@@ -763,8 +787,9 @@ body {
   right: 0;
   width: 40px;
   height: 41px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(50%, #fff), to(#fff));
-  background: linear-gradient(to right, transparent 30%, #fff 50%, #fff 100%);
+  background: white;
+  -webkit-box-shadow: -14px 0px 10px 12px white;
+          box-shadow: -14px 0px 10px 12px white;
   margin: 0;
   border-radius: 0;
   -webkit-transition: all 0.3s linear;
@@ -772,8 +797,7 @@ body {
 }
 
 .type-slider .owl-nav button.owl-next:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(50%, #fff), to(#fff));
-  background: linear-gradient(to right, transparent 30%, #fff 50%, #fff 100%);
+  background: white;
 }
 
 .tips {
@@ -911,7 +935,7 @@ body {
 
 .employers__section {
   padding-bottom: 90px;
-  background: #EFF6FC;
+  background: #DEECF9;
 }
 
 .employers__card {
