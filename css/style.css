@@ -127,9 +127,18 @@ body {
   background: transparent;
 }
 
+.header__nav .nav-item.dropdown .dropdown-menu {
+  min-width: auto;
+  width: 100%;
+}
+
 .header__nav .nav-item.dropdown .dropdown-menu a {
-  color: #666;
+  color: #0078D4 !important;
   padding: 5px 10px;
+}
+
+.header__nav .nav-item.dropdown .dropdown-menu a:focus {
+  background: none;
 }
 
 .header__nav .nav-link {

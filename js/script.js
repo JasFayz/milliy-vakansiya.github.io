@@ -1,35 +1,33 @@
 $(document).ready(function () {
 
-    console.log($(document).width())
 
     if ($(document).width() < 776) {
         $('.mobile__btn button').click(function () {
-            console.log('click');
             $('.main_nav').toggleClass('show')
-        })
+        });
         $('.js_close_main-nav').click(function () {
             $('.main_nav').removeClass('show')
-        })
+        });
     }
 
 
     $('.js_popup').click(function (e) {
-        let popup = $('.map_popup');
-        let regionName = $(e.delegateTarget).attr('data-name');
+        var popup = $('.map_popup');
+        var regionName = $(e.delegateTarget).attr('data-name');
         popup.find('.title b').text(regionName);
         var left = (e.originalEvent.pageX - popup.width() / 2 - 15) + 'px';
         var top = (e.originalEvent.pageY - popup.height() - 50) + 'px';
         popup.css({
             top: top,
             left: left
-        })
+        });
 
         popup.addClass('show');
         $('.map').mouseleave(function () {
             setTimeout(function () {
                 $('.map_popup').removeClass('show');
             }, 2000)
-        })
+        });
     })
 
     $('.type-carousel').owlCarousel({
@@ -46,7 +44,7 @@ $(document).ready(function () {
                 nav: true,
             }
         }
-    })
+    });
 
     $('.tips-carousel').owlCarousel({
         loop: true,
@@ -71,7 +69,7 @@ $(document).ready(function () {
                 items: 1
             }
         }
-    })
+    });
 
     $('.useful-links_carousel').owlCarousel({
         loop: true,
@@ -104,7 +102,7 @@ $(document).ready(function () {
                 nav: false,
             }
         }
-    })
+    });
 
     if ($(document).width() < 991) {
         $('.vacancy__list .row').addClass('owl-carousel owl-theme');
@@ -124,7 +122,7 @@ $(document).ready(function () {
                     items: 2
                 }
             }
-        })
+        });
         $('.employer__list> .owl-carousel').owlCarousel({
             items: 1,
             loop: true,
@@ -132,7 +130,7 @@ $(document).ready(function () {
             autoWidth: true,
             dots: false,
             nav: false,
-        })
+        });
         $('.vacancies__tab .tab-content .row ').owlCarousel({
             items: 1,
             loop: true,
@@ -141,10 +139,7 @@ $(document).ready(function () {
             dots: false,
             nav: false,
             center: true
-        })
+        });
     }
 
-
-
-
-})
+});
