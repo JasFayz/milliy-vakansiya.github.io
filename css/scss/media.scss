@@ -165,7 +165,7 @@
         top              : 0;
         // padding-top   : 5px;
         // padding-bottom: 5px; 
-        border-bottom    : 1px solid #0078D4;
+        // border-bottom    : 1px solid #0078D4;
         background       : #0078D4;
         z-index          : 5;
     }
@@ -175,11 +175,15 @@
         padding-bottom: 0;
     }
 
-    .header__nav {
+    .header.inner .header__nav {
         display      : none;
         padding-right: 74px;
     }
 
+    .header__nav {
+        padding-right: 74px;
+        text-align   : right;
+    }
 
 
     .header .mobile__btn {
@@ -192,6 +196,7 @@
     .header__logo {
         padding-top   : 5px;
         padding-bottom: 5px;
+        width         : 55px;
     }
 
     .header__logo .name {
