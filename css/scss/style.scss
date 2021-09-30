@@ -6,8 +6,9 @@ body {
 }
 
 .app {
-    position: relative;
-    overflow: hidden;
+    position : relative;
+    overflow : hidden;
+    min-width: 375px;
 }
 
 .section__title {
@@ -21,6 +22,19 @@ body {
     text-align    : center;
 }
 
+.position-relative {
+    position: relative;
+}
+
+.btn-primary {
+    background: #0778D4;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border    : 1px solid #0778D4;
+    color     : #0078D4
+}
 
 @import './header';
 @import './intro';
@@ -28,3 +42,4 @@ body {
 @import './tips';
 @import './employer';
 @import './footer';
+@import './register';

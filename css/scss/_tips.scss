@@ -7,7 +7,7 @@
         font-size     : 32px;
         letter-spacing: -0.01em;
         line-height   : 39px;
-        color         : #f8f8f8;
+        color         : #F4F4F4;
         text-transform: uppercase;
         margin-top    : 40px;
         margin-bottom : 18px;
@@ -16,8 +16,11 @@
     &__subtitle {
         font-size     : 18px;
         letter-spacing: -0.01em;
-        color         : #e8e8e8;
+        color         : #DEECF9;
 
+        &:last-of-type {
+            padding-right: 18%;
+        }
 
     }
 
@@ -115,8 +118,8 @@
             }
 
             & button.owl-next {
-                position: absolute;
-                bottom  : calc(100% + 25px);
+                position     : absolute;
+                bottom       : calc(100% + 25px);
                 right        : 0;
                 width        : 40px;
                 height       : 40px;

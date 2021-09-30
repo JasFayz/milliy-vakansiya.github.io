@@ -273,45 +273,79 @@
     }
 }
 
-.main_nav.nav {
-    display      : table;
-    text-align   : center;
-    // width     : 100%;
-    margin       : 0 auto;
+.main_nav {
+    & .nav {
+        display      : table;
+        text-align   : center;
+        // width     : 100%;
+        margin       : 0 auto;
+        transform    : translateY(0);
 
-    & .nav-item {
+        & .nav-item {
 
-        display: table-cell;
-        padding: 0 35px;
+            display: table-cell;
+            padding: 0 35px;
 
-        &:last-child {
-            padding-right: 0;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        & .nav-link {
+            // padding       : 16px 28px;
+            transition     : all 0.3s linear;
+            font-family    : "Segoe UI";
+            font-weight    : bold;
+            font-size      : 16px;
+            letter-spacing : -0.02em;
+            text-transform : uppercase;
+            color          : #f8f8f8;
+            padding-bottom : 5px;
+            border-bottom  : 2px solid transparent;
+            text-decoration: none;
+            border-radius  : 0;
+            padding        : 0;
+
+
+
+            &:hover {
+                background   : none;
+                border-bottom: 2px solid #FFB900;
+
+            }
+
+
+        }
+
+        &.inner {
+            position: absolute;
+            top     : 0;
+            left    : 0;
+            z-index : -5;
         }
     }
 
-    & .nav-link {
-        // padding       : 16px 28px;
-        transition     : all 0.3s linear;
-        font-family    : "Segoe UI";
-        font-weight    : bold;
-        font-size      : 16px;
-        letter-spacing : -0.02em;
-        text-transform : uppercase;
-        color          : #f8f8f8;
-        padding-bottom : 5px;
-        border-bottom  : 2px solid transparent;
-        text-decoration: none;
-        border-radius  : 0;
-        padding        : 0;
+    & .js_close_main-nav {
+        display   : none;
+        background: none;
+        border    : 0;
+        box-shadow: none;
+        position  : absolute;
+        top       : 21px;
+        right     : 21px;
 
+    }
 
-
-        &:hover {
-            background   : none;
-            border-bottom: 2px solid #FFB900;
-
-        }
-
-
+    .login-link {
+        padding       : 0.8vw 1.45vw;
+        background    : none;
+        font-weight   : normal;
+        font-size     : 16px;
+        letter-spacing: -0.02em;
+        color         : #f8f8f8;
+        display       : none;
+        position      : absolute;
+        top           : 21px;
+        right         : 95px;
     }
 }
