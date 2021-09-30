@@ -27,13 +27,31 @@ body {
 }
 
 .btn-primary {
-    background: #0778D4;
+    background: #0778D4 !important;
+}
+
+.btn-warning {
+    background  : #FFB900 !important;
+    border-color: #FFB900 !important;
+
+    &:hover {
+        background: darken($color: #FFB900, $amount: 5) !important;
+    }
 }
 
 .btn-outline-primary {
     background: transparent;
-    border    : 1px solid #0778D4;
-    color     : #0078D4
+    border    : 1px solid #0778D4 !important;
+    color     : #0078D4 !important;
+
+    &:hover {
+        background: darken($color: #0778D4, $amount: 5) !important;
+        color     : #fff !important;
+
+        path {
+            fill: #fff
+        }
+    }
 }
 
 @import './header';
