@@ -26,6 +26,16 @@ body {
     position: relative;
 }
 
+.btn {
+    border-radius    : 0;
+    padding          : 11px 22px;
+    // border        : 0;
+    border-radius    : 0;
+    font-size        : 14px;
+    letter-spacing   : -0.02em;
+
+}
+
 .btn-primary {
     background: #0778D4 !important;
 }
@@ -54,6 +64,103 @@ body {
     }
 }
 
+.pagination {
+    &-row {
+        text-align: center
+    }
+
+    & li {
+        margin-right: 15px;
+        display     : inline-block;
+
+        & a {
+            border-radius: 50%;
+            width        : 40px;
+            height       : 40px;
+            border       : 0;
+
+            font-weight   : 600;
+            font-size     : 18px;
+            letter-spacing: -0.02em;
+            line-height   : 40px;
+            padding       : 0;
+
+            &:hover {
+                background-color: #3C3C3C;
+                color           : #F8F8F8;
+
+            }
+        }
+
+        &.dots {
+            span {
+                border: none;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+
+        &.active {
+            & a {
+                background-color: #3C3C3C;
+                color           : #F8F8F8;
+
+                &:hover {
+                    background-color: #3C3C3C;
+                    color           : #F8F8F8;
+                }
+            }
+        }
+
+        &:first-child {
+            & span {
+                border-radius   : 50%;
+                width           : 40px;
+                height          : 40px;
+                border          : 0;
+                background-color: #0078D4;
+                position        : relative;
+
+                & svg {
+                    position : absolute;
+                    top      : 50%;
+                    left     : 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    background-color: #0078D4;
+
+                }
+            }
+        }
+
+        &:last-child {
+            & a {
+                border-radius   : 50%;
+                width           : 40px;
+                height          : 40px;
+                border          : 0;
+                background-color: #0078D4;
+
+                &:hover {
+                    background-color: #0078D4;
+
+                }
+            }
+
+            & svg {
+                position : absolute;
+                top      : 50%;
+                left     : 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
 @import './header';
 @import './intro';
 @import './vacancies_section';
@@ -61,3 +168,5 @@ body {
 @import './employer';
 @import './footer';
 @import './register';
+@import './list';
+@import './resume';

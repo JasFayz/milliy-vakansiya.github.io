@@ -246,6 +246,10 @@
         & .search {
             float: right;
 
+            & .form-control {
+                height: 44px;
+            }
+
             &>.btn {
                 background: transparent;
                 border    : none;

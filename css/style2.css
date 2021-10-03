@@ -250,6 +250,10 @@ body {
   float: right;
 }
 
+.header__bottom .search .form-control {
+  height: 44px;
+}
+
 .header__bottom .search > .btn {
   background: transparent;
   border: none;
