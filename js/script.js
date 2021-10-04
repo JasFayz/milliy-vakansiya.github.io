@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     if ($(document).width() < 776) {
         $('.mobile__btn button').click(function () {
             $('.main_nav').toggleClass('show')
@@ -37,6 +36,8 @@ $(document).ready(function () {
         autoWidth: true,
         dots: false,
         nav: false,
+        autoHeight:true,
+        center: true,
         navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
         responsive: {
             600: {
@@ -120,6 +121,7 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             autoWidth: true,
+            autoHeight:true,
             dots: false,
             nav: false,
             responsive: {
@@ -133,6 +135,8 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             autoWidth: true,
+            
+            autoHeight:true,
             dots: false,
             nav: false,
         });
@@ -141,9 +145,10 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             autoWidth: true,
+            center: true,
             dots: false,
             nav: false,
-            center: true
+            
         });
     }
 
