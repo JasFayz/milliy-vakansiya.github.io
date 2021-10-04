@@ -98,6 +98,8 @@
                     color         : #3c3c3c;
                     margin-bottom : 20px;
 
+                  
+
                     &:hover {
                         background: darken($color: #EAEAEA, $amount: 10);
                         outline   : none;
@@ -397,7 +399,9 @@
                 padding-left  : 20px;
                 background    : url('./../image/icon_view.svg')no-repeat 0 50%/14px;
             }
-
+            & .btn-primary {
+                background: #0778D4 !important;
+            }
             & .btn-favorite {
                 padding: 7px 15px;
             }

@@ -564,6 +564,7 @@ body {
   background: #FFFFFF;
   border: none;
   color: #0078D4;
+  font-weight: 700;
 }
 
 .intro .tab-form .nav > li.active a > span {
@@ -580,6 +581,7 @@ body {
   font-size: 16px;
   letter-spacing: -0.01em;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .intro .tab-form .nav > li > a:hover {
@@ -621,7 +623,7 @@ body {
   letter-spacing: -0.02em;
   color: #666;
   padding-left: 32px;
-  background: url("./../image/icon_place-blue.svg") no-repeat 10px 50%/15px, url("./../image/icon_arrow-down.svg") no-repeat calc(100% - 15px) 50%/15px;
+  background: url("./../image/icon_place-blue.svg") no-repeat 12px 50%/11px, url("./../image/icon_arrow-down.svg") no-repeat calc(100% - 15px) 50%/15px;
 }
 
 .intro .tab-form .tab-content select.form-control.job {
@@ -640,6 +642,7 @@ body {
   line-height: 42px;
   border-bottom: 1px solid transparent;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .intro .tab-form .tab-content .links .btn-link:hover {
@@ -2317,6 +2320,10 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   background: url("./../image/icon_view.svg") no-repeat 0 50%/14px;
+}
+
+.list__vacancies__item .btn-primary {
+  background: #0778D4 !important;
 }
 
 .list__vacancies__item .btn-favorite {

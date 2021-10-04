@@ -10,9 +10,10 @@
         & .nav>li {
             &.active {
                 & a {
-                    background: #FFFFFF;
-                    border    : none;
-                    color     : #0078D4;
+                    background : #FFFFFF;
+                    border     : none;
+                    color      : #0078D4;
+                    font-weight: 700;
 
                     &>span {
                         border-bottom: 2px solid #FFB900;
@@ -31,6 +32,7 @@
                 font-size     : 16px;
                 letter-spacing: -0.01em;
                 margin-bottom : 0;
+                font-weight   : 700;
 
                 &:hover {
                     border: none;
@@ -70,8 +72,9 @@
                     color         : #666;
 
                     padding-left: 32px;
-                    background  : url('./../image/icon_place-blue.svg')no-repeat 10px 50% /15px, url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 15px) 50%/15px;
+                    background  : url('./../image/icon_place-blue.svg')no-repeat 12px 50% /11px, url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 15px) 50%/15px;
                 }
+
                 &.job {
                     font-family   : "Segoe UI";
                     font-weight   : normal;
@@ -94,6 +97,7 @@
                     line-height    : 42px;
                     border-bottom  : 1px solid transparent;
                     text-decoration: none;
+                    font-size      : 16px;
 
                     &:hover {
                         border-bottom: 1px solid #C7E0F4;
