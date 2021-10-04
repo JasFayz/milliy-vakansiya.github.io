@@ -57,10 +57,13 @@ $(document).ready(function () {
         navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn-white.svg' width='32'></div>", "<div class='next-btn'><img src='./image/icon_next-btn-white.svg' width='32'></div>"],
         responsive: {
             1200: {
-                items: 4
+                items: 4,
+                stagePadding: 0,
+
             },
             991: {
-                items: 3
+                items: 3,
+                stagePadding: 0,
             },
             776: {
                 items: 2
@@ -86,11 +89,13 @@ $(document).ready(function () {
             1200: {
                 items: 4,
                 nav: true,
+                stagePadding: 0,
+
             },
             991: {
                 items: 3,
                 nav: true,
-
+                stagePadding: 0,
             },
             776: {
                 items: 2,
