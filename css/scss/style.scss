@@ -160,6 +160,16 @@ body {
         }
     }
 }
+.row-no-gutters [class*=col-] {
+    padding-right: 15px;
+    padding-left : 15px;
+}
+.row-no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left : 0;
+}
+
+
 
 @import './header';
 @import './intro';
@@ -170,3 +180,4 @@ body {
 @import './register';
 @import './list';
 @import './resume';
+@import './_vpage';

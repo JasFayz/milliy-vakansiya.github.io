@@ -49,6 +49,19 @@
     height: auto;
     display: inline-block;
   }
+  .v-page .row-right-divider::before {
+    width: 100%;
+    height: 1px;
+    top: auto;
+    bottom: -20px;
+  }
+  .v-page .simple-card {
+    max-width: 100%;
+  }
+  .v-page .card-links,
+  .v-page .similar_v {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -324,6 +337,13 @@
   }
   .list__vacancies__item .date_view {
     float: none;
+  }
+  .v-page .simple-card {
+    background-position: calc(100% + 69px) 50%;
+  }
+  .v-page .simple-card .card-body {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=media.css.map */

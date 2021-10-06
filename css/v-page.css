@@ -1,0 +1,118 @@
+.v-page .v-info {
+  padding-top: 40px;
+}
+
+.v-page .v-info .name {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 32px;
+  text-align: left;
+  color: #0078d4;
+  height: 85px;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 598px;
+  width: 100%;
+}
+
+.v-page .v-info .salary {
+  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.v-page .v-info .salary b {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+.v-page .v-info .organization {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: #3c3c3c;
+  margin-bottom: 7px;
+}
+
+.v-page .v-info .organization.checked {
+  padding-right: 19px;
+  display: inline-block;
+  background: url("./../image/icon_checked.svg") no-repeat 100% 0/14px;
+}
+
+.v-page .v-info .organization__logo {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 51% 50%;
+  background-size: 70%;
+  border: 1px solid #CAD1D8;
+}
+
+.v-page .v-info .address {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.v-page .v-info .date_view {
+  float: right;
+  height: 42px;
+  vertical-align: middle;
+  display: table;
+}
+
+.v-page .v-info .date_view::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.v-page .v-info .date {
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 20px;
+  padding-left: 20px;
+  background: url("./../image/icon_calendar.svg") no-repeat 0 50%/14px;
+  padding-right: 20px;
+}
+
+.v-page .v-info .desc {
+  letter-spacing: -0.01em;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 17px;
+  max-width: 77%;
+  width: 100%;
+}
+
+.v-page .v-info .view-count {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: url("./../image/icon_view.svg") no-repeat 0 50%/14px;
+}
+
+.v-page .v-info .btn-primary {
+  background: #0778D4 !important;
+}
+
+.v-page .v-info .btn-favorite {
+  padding: 7px 15px;
+}
+/*# sourceMappingURL=v-page.css.map */
