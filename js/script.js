@@ -36,7 +36,7 @@ $(document).ready(function () {
         autoWidth: true,
         dots: false,
         nav: false,
-        autoHeight:true,
+        autoHeight: true,
         center: true,
         navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
         responsive: {
@@ -121,7 +121,7 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             autoWidth: true,
-            autoHeight:true,
+            autoHeight: true,
             dots: false,
             nav: false,
             responsive: {
@@ -135,8 +135,8 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             autoWidth: true,
-            
-            autoHeight:true,
+
+            autoHeight: true,
             dots: false,
             nav: false,
         });
@@ -148,8 +148,24 @@ $(document).ready(function () {
             center: true,
             dots: false,
             nav: false,
-            
+
         });
     }
-
+    $('.video__play').click(function () {
+        $(this).siblings('video').get(0).play();
+        $(this).siblings('video').attr('controls', true)
+        $(this).hide();
+    })
+    $('.video__size').click(function () {
+        let elem = $(this).siblings('video').get(0);
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+    })
 });
