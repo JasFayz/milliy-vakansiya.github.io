@@ -561,7 +561,7 @@ body {
 }
 
 .intro {
-  min-height: 900px;
+  min-height: 100vh;
   background: url("./../image/intro_bg.png") no-repeat 0/cover;
   padding-top: 139px;
 }
@@ -905,7 +905,7 @@ body {
   -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
   position: relative;
-  top: -69px;
+  top: -68px;
 }
 
 .vacancies__tab .nav-tabs .nav-item.active .nav-link {
