@@ -314,7 +314,8 @@
   .main_nav .js_close_main-nav {
     display: block;
   }
-  .page-blog .blog-content, .page-blog .blog__link {
+  .page-blog .blog-content,
+  .page-blog .blog__link {
     padding-right: 0;
   }
   .page-blog .blog-content .video {

@@ -1098,12 +1098,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 10px;
+  line-height: 1;
+  color: #333333;
 }
 
 .vacancies__latest .vacancy__info .salary b {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: -0.01em;
+  line-height: 1;
   color: #333;
 }
 
@@ -1158,6 +1161,8 @@ body {
   margin-right: 20px;
   padding-left: 20px;
   background: url("./../image/icon_calendar.svg") no-repeat 0 50%/14px;
+  font-size: 14px;
+  color: #666666;
 }
 
 .vacancies__latest .vacancy__info .view-count {
@@ -1165,6 +1170,8 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   background: url("./../image/icon_view.svg") no-repeat 0 50%/14px;
+  font-size: 14px;
+  color: #666666;
 }
 
 .vacancies__latest .more_link {

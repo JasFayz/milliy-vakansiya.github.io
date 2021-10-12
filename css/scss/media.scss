@@ -390,7 +390,8 @@
         display: block;
     }
 
-    .page-blog .blog-content, .page-blog .blog__link {
+    .page-blog .blog-content,
+    .page-blog .blog__link {
         padding-right: 0;
     }
 
@@ -402,6 +403,8 @@
         padding-left : 52px;
         padding-right: 52px;
     }
+
+
 }
 
 @media (max-width: 558px) {
