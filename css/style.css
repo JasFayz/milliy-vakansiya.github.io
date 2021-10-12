@@ -561,7 +561,7 @@ body {
 }
 
 .intro {
-  min-height: 100vh;
+  min-height: 969px;
   background: url("./../image/intro_bg.png") no-repeat 0/cover;
   padding-top: 139px;
 }
