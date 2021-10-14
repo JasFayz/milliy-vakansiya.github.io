@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Segoe UI';
-    src        : local('Segoe UI'), local('Segoe UI'),
+    src        : local('Segoe'), local('Segoe'),
         url('./segoeuisb.woff') format('woff'),
         url('./segoeuisb.woff2') format('woff2'),
         url('./segoeuisb.ttf') format('truetype');
