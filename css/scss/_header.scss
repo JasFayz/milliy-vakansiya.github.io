@@ -111,6 +111,86 @@
                 }
             }
 
+
+        }
+
+        &.inner {
+            & .nav {
+                & .nav-link {
+                    border-radius: 100px;
+                    outline      : 1px solid #fff;
+                    font-size    : 14px;
+                    color        : #fff;
+                    margin-right : 20px;
+                    padding      : 15px 38px;
+                    background   : transparent;
+                    z-index      : 2;
+
+                    &.rounded {
+                        width   : 50px;
+                        height  : 50px;
+                        outline : 1px solid #fff;
+                        padding : 0;
+                        position: relative;
+
+                        & span:first-child {
+                            position : absolute;
+                            top      : 50%;
+                            left     : 50%;
+                            transform: translate(-50%, -50%);
+                        }
+
+
+                    }
+
+                    & span {
+                        font-size     : 14px;
+                        font-weight   : normal;
+                        text-transform: initial;
+
+                        & svg {
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &:hover {
+                        outline: 3px solid #FFB900;
+
+                        & span {
+                            border: none;
+                        }
+                    }
+                }
+
+                & .nav-item {
+                    position: relative;
+                    z-index : 1;
+
+                    &.active {
+                        // outline: 3px solid #FFB900;
+
+                        &::before {
+                            content         : '';
+                            display         : block;
+                            width           : 20px;
+                            height          : 20px;
+                            background      : #0078D4;
+                            // background   : red;
+                            position        : absolute;
+                            bottom          : -15px;
+                            left            : 50%;
+                            transform       : translateX(calc(-50% - 10px)) rotate(-45deg);
+                            z-index         : 1;
+                        }
+
+                        & .nav-link {
+                            outline: 3px solid #FFB900;
+
+                        }
+                    }
+                }
+
+            }
         }
     }
 
@@ -183,6 +263,11 @@
             }
         }
 
+        & .header__nav .nav {
+            &.on-mobile {
+                display: none;
+            }
+        }
 
     }
 
@@ -276,6 +361,16 @@
                 padding      : 15px;
                 min-width    : 20em;
                 border-radius: 0;
+            }
+        }
+
+        & .nav {
+            & .nav-link {
+                span {
+                    font-size  : 18px;
+                    line-height: 24px;
+                    color      : #0078D4;
+                }
             }
         }
     }

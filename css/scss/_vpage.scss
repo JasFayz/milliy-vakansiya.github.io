@@ -131,16 +131,20 @@
                 }
 
                 &-rounded {
-                    border-radius: 100px;
+                    border-radius: 100px !important;
                 }
             }
         }
+
         & .btn {
-            transition: all 0.3s linear;
+            transition  : all 0.3s linear;
+            margin-right: 20px;
         }
+
         & .btn-primary {
-            background  : #0778D4 ;
+            background  : #0778D4;
             border-color: #0778D4;
+
             &:hover {
                 background: darken($color: #0778D4, $amount: 10);
             }
@@ -305,6 +309,11 @@
             position  : absolute;
             background: #D0D0D0;
         }
+    }
+
+    & .flex-order {
+        display       : flex;
+        flex-direction: column;
     }
 
     & .similar_v {

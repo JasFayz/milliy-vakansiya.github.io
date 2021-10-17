@@ -43,9 +43,6 @@
   .no-desktop {
     display: none !important;
   }
-  .header.inner .header__logo {
-    float: none;
-  }
   .header__nav {
     margin-top: 25px;
     text-align: center;
@@ -157,6 +154,9 @@
   .page-blog .banner__title {
     padding-right: 0;
   }
+  .on-tab {
+    display: block !important;
+  }
 }
 
 @media (max-width: 776px) {
@@ -165,12 +165,16 @@
     background: #0078D4;
     z-index: 5;
   }
+  .header.inner .header__top,
+  .header.inner .header__bottom {
+    display: none;
+  }
   .header.inner .header__middle {
     padding-top: 0;
     padding-bottom: 0;
+    background: #0078D4;
   }
   .header.inner .header__nav {
-    display: none;
     padding-right: 74px;
   }
   .header__nav {
@@ -329,6 +333,181 @@
     padding-left: 52px;
     padding-right: 52px;
   }
+  .list__vacancies__item .salary {
+    float: none;
+  }
+  .list__vacancies__item .organization__logo {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    margin-left: 15px;
+    margin-bottom: 7px;
+  }
+  .list__filters {
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    -webkit-box-shadow: 0 0px 99px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0px 99px rgba(0, 0, 0, 0.6);
+    top: 72px;
+    left: -120%;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .filter__header {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 21;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .filter__header.open {
+    left: 0;
+  }
+  .list__filters.open {
+    left: 0;
+  }
+  .list__vacancies__item .date_view {
+    float: none;
+  }
+  .list__content .filter_mobile_btn {
+    display: inline-block;
+  }
+  .v-page .v-card .organization__logo {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    top: auto;
+    right: auto;
+    margin-bottom: 7px;
+  }
+  .v-page .simple-card {
+    background-position: 50% 35px;
+  }
+  .v-page .simple-card .card-body {
+    width: 100%;
+    padding-right: 0;
+    padding-top: 222px;
+  }
+  .v-page .card-links {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .v-page .similar_v {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 30px;
+  }
+  .simple-card {
+    padding-top: 222px;
+    background-position: 50% 35px;
+  }
+  .simple-card .card-body {
+    width: 100%;
+    padding-right: 0;
+  }
+  .register__title {
+    display: block;
+  }
+  .simple-card.step-1,
+  .simple-card.step-2 {
+    margin-bottom: 40px;
+  }
+  .resume__make {
+    background-color: #DEECF9;
+  }
+  .header.inner .header__nav.inner {
+    display: block;
+  }
+  .header.inner .header__nav.inner .nav-link {
+    display: none;
+  }
+  .header.inner .header__nav.inner .nav-link.rounded {
+    display: inline-block;
+  }
+  .header.inner .header__nav.inner {
+    float: right;
+    margin-top: 13px;
+    padding-right: 64px;
+  }
+  .header.inner .header__nav .nav {
+    display: none;
+  }
+  .header.inner .header__nav .nav {
+    display: none;
+  }
+  .header.inner .header__nav.inner .nav {
+    display: block;
+  }
+  .header.inner .header__nav {
+    margin-top: 0;
+  }
+  .header.inner .header__nav .nav.on-mobile {
+    display: block;
+    float: right;
+  }
+  .header.inner .header__nav .nav.on-mobile .nav-item {
+    margin-right: 30px;
+  }
+  .header.inner .header__nav .nav.on-mobile .nav-item:last-child {
+    margin-right: 0;
+  }
+  .header.inner .header__nav .nav.on-mobile .nav-link {
+    display: table-cell;
+    height: 72px;
+    vertical-align: middle;
+    text-transform: initial;
+    font-weight: normal;
+    padding-left: 39px;
+  }
+  .header.inner .header__nav .nav.on-mobile .nav-link span:first-child {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  .list__info .__header {
+    margin-bottom: 20px;
+  }
+  .list__header .btn-find span.text {
+    display: none;
+  }
+  .no-padding-right-mobile {
+    padding-right: 0;
+  }
+  .no-padding-left-mobile {
+    padding-left: 0;
+  }
+  .v-page .v-card {
+    padding-right: 0;
+  }
+  .v-page .v-card .request span {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .list__header .btn-find {
+    position: relative;
+  }
+  .list__header .btn-find:focus {
+    outline: none;
+    border: none;
+  }
+  .list__header .btn-find svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 558px) {
@@ -368,9 +547,6 @@
   .list__vacancies__item .date_view {
     float: none;
   }
-  .v-page .simple-card {
-    background-position: calc(100% + 69px) 50%;
-  }
   .v-page .simple-card .card-body {
     width: 100%;
     padding-right: 0;
@@ -389,6 +565,54 @@
   }
   .resume-info .block .simple-card .interest {
     right: 15px;
+  }
+  .pagination li {
+    margin-right: 0;
+  }
+  .intro .statistic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #0078D4 url("./../image/intro_bg.png") no-repeat 50% 0/cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .intro .statistic.hiden {
+    top: -100%;
+  }
+  .intro .statistic .item {
+    padding: 18px 35px;
+    text-align: center;
+  }
+  .intro .statistic .item .icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .intro .statistic__logo {
+    display: block;
+    margin: 65px auto 64px auto;
+  }
+  .intro .statistic .swipe__btn {
+    display: inline-block;
+  }
+  .intro .statistic .item .info {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 376px) {
+  .header.inner .header__nav .nav.on-mobile .nav-item {
+    float: none;
+  }
+  .header.inner .header__nav {
+    margin-top: 6px;
+  }
+  .header.inner .header__nav .nav.on-mobile .nav-link {
+    height: auto;
   }
 }
 /*# sourceMappingURL=media.css.map */

@@ -175,10 +175,93 @@
 
 
                 & .number {
-                    font-size: 37px;
-                    font-size: 600;
+                    font-size  : 37px;
+                    font-weight: 600;
                 }
             }
+        }
+
+        &__logo {
+            // float  : left;
+            display: none;
+            width  : 220px;
+
+
+            & .icon {
+                width     : 70px;
+                display   : table-cell;
+                object-fit: cover;
+                float     : left;
+
+                & img {
+                    width  : 100%;
+                    display: block;
+                }
+            }
+
+            & .name {
+                display          : table-cell;
+                height           : 82px;
+                vertical-align   : middle;
+                padding-left     : 10px;
+                // padding-right : 35%;
+
+                font-weight   : bold;
+                font-size     : 16px;
+                letter-spacing: -0.01em;
+                line-height   : 18px;
+                color         : #f8f8f8;
+                text-transform: uppercase;
+                padding-left  : 20px;
+                position      : relative;
+                width         : 150px;
+
+
+                &::before {
+                    content   : '';
+                    display   : block;
+                    width     : 2px;
+                    height    : 64px;
+                    position  : absolute;
+                    background: url('./../image/logo_flag.png')no-repeat 0 /cover;
+                    top       : 50%;
+                    left      : 10px;
+                    transform : translateY(-50%);
+                }
+            }
+        }
+
+        & .swipe__btn {
+            margin-top: 65px;
+            display   : none;
+            background: transparent;
+            border    : 0;
+            outline   : none;
+
+            & .icon {
+                background   : #FFB900;
+                width        : 36px;
+                height       : 36px;
+                margin       : 0 auto;
+                border-radius: 50%;
+                position     : relative;
+
+                margin-bottom: 10px;
+
+                & svg {
+                    position : absolute;
+                    top      : 50%;
+                    left     : 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            & .text {
+                font-size  : 16px;
+                font-weight: 600;
+                color      : white;
+            }
+
         }
     }
 }

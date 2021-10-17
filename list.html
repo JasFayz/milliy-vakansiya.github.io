@@ -127,6 +127,39 @@
                                     </a>
                                 </li>
                             </ul>
+                            <ul class="nav nav-pills on-mobile">
+                                <li class="nav-item ">
+                                    <a href="" class="nav-link">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                                viewBox="0 0 45 42">
+                                                <path id="Fabric_Icons" data-name="Fabric Icons"
+                                                    d="M21-42V-3H-24V-42h6v-3h9a12.55,12.55,0,0,1,3.973.633,11.613,11.613,0,0,1,3.527,1.9,11.613,11.613,0,0,1,3.527-1.9A12.55,12.55,0,0,1,6-45h9v3ZM6-42a9.434,9.434,0,0,0-3.187.551A9.159,9.159,0,0,0,0-39.844v29.391a11.956,11.956,0,0,1,2.906-1.16A12.526,12.526,0,0,1,6-12h6V-42ZM-15-12h6a12.526,12.526,0,0,1,3.094.387A11.956,11.956,0,0,1-3-10.453V-39.844a9.159,9.159,0,0,0-2.812-1.605A9.434,9.434,0,0,0-9-42h-6Zm-6,6H-2.109A13.207,13.207,0,0,0-3.633-7.277a10.114,10.114,0,0,0-1.605-.937A8.3,8.3,0,0,0-7-8.8,9.522,9.522,0,0,0-9-9h-9V-39h-3ZM18-39H15V-9H6a9.522,9.522,0,0,0-2,.2,8.3,8.3,0,0,0-1.758.586,10.114,10.114,0,0,0-1.605.938A13.207,13.207,0,0,0-.891-6H18Z"
+                                                    transform="translate(24 45)" fill="#f8f8f8" />
+                                            </svg>
+
+                                        </span>
+                                        <span class="name">Qo’llanma</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="" class="nav-link">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24"
+                                                viewBox="0 0 42.609 48">
+                                                <path id="Fabric_Icons" data-name="Fabric Icons"
+                                                    d="M-14.109-24a1.442,1.442,0,0,0-1.055.445,1.442,1.442,0,0,0-.445,1.055,1.442,1.442,0,0,0,.445,1.055A1.442,1.442,0,0,0-14.109-21a1.442,1.442,0,0,0,1.055-.445,1.442,1.442,0,0,0,.445-1.055,1.442,1.442,0,0,0-.445-1.055A1.442,1.442,0,0,0-14.109-24Zm19.5,6h-3V0h3Zm-27-30V0h3V-45h21v18h3V-48ZM15.258-24H-3.609v3H15.258l-4.922,4.945,2.109,2.109L21-22.5l-8.555-8.555-2.109,2.109Z"
+                                                    transform="translate(21.609 48)" fill="#f8f8f8" />
+                                            </svg>
+                                        </span>
+                                        <span class="name">Kirish</span>
+                                    </a>
+                                </li>
+
+
+
+
+                            </ul>
                         </div>
                         <div class="mobile__btn">
                             <button class="btn ">
@@ -148,7 +181,22 @@
                         <li class="breadcrumb-item active"> Ro’yhatdan o’tish</li>
                     </ol>
 
-
+                    <div class="search dropdown">
+                        <button class="btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="./image/icon_search.svg" alt="" width="24px">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Найти</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="main_nav">
@@ -250,7 +298,7 @@
                     <div class="search-form">
                         <form action="">
                             <div class="row">
-                                <div class="col-lg-10 col-md-10">
+                                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-10 no-padding-right-mobile">
                                     <div class="form-group position-relative">
                                         <input type="text" class="form-control"
                                             placeholder="Vakansiya izlash uchun kasb, hudud, lavozim yoki tashkilot nomini kiriting ">
@@ -264,7 +312,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-2 no-padding-left-mobile">
                                     <button class="btn btn-primary btn-block btn-find">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 32 32">
@@ -272,7 +320,7 @@
                                                 d="M21-32a10.866,10.866,0,0,1,2.922.391A10.868,10.868,0,0,1,26.547-30.5a11.142,11.142,0,0,1,2.227,1.727A11.142,11.142,0,0,1,30.5-26.547a10.868,10.868,0,0,1,1.109,2.625A10.866,10.866,0,0,1,32-21a10.866,10.866,0,0,1-.391,2.922A10.868,10.868,0,0,1,30.5-15.453a11.142,11.142,0,0,1-1.727,2.227A11.142,11.142,0,0,1,26.547-11.5a10.868,10.868,0,0,1-2.625,1.109A10.866,10.866,0,0,1,21-10a10.781,10.781,0,0,1-3.742-.656,11.233,11.233,0,0,1-3.289-1.891L1.7-.3A.961.961,0,0,1,1,0,.961.961,0,0,1,.3-.3.961.961,0,0,1,0-1a.961.961,0,0,1,.3-.7l12.25-12.266a11.233,11.233,0,0,1-1.891-3.289A10.781,10.781,0,0,1,10-21a10.866,10.866,0,0,1,.391-2.922A10.868,10.868,0,0,1,11.5-26.547a11.142,11.142,0,0,1,1.727-2.227A11.142,11.142,0,0,1,15.453-30.5a10.868,10.868,0,0,1,2.625-1.109A10.866,10.866,0,0,1,21-32Zm0,20a8.707,8.707,0,0,0,3.5-.711,9.138,9.138,0,0,0,2.859-1.93,9.139,9.139,0,0,0,1.93-2.859A8.707,8.707,0,0,0,30-21a8.707,8.707,0,0,0-.711-3.5,9.139,9.139,0,0,0-1.93-2.859,9.139,9.139,0,0,0-2.859-1.93A8.707,8.707,0,0,0,21-30a8.707,8.707,0,0,0-3.5.711,9.139,9.139,0,0,0-2.859,1.93,9.138,9.138,0,0,0-1.93,2.859A8.707,8.707,0,0,0,12-21a8.707,8.707,0,0,0,.711,3.5,9.138,9.138,0,0,0,1.93,2.859,9.138,9.138,0,0,0,2.859,1.93A8.707,8.707,0,0,0,21-12Z"
                                                 transform="translate(0 32)" fill="#f8f8f8" />
                                         </svg>
-                                        Qidirish
+                                        <span class="text">Qidirish</span>
                                     </button>
                                 </div>
                             </div>
@@ -304,7 +352,7 @@
                             <div class="list__title">
                                 Topilgan vakansiyalar soni <b>53 897</b> ta
                             </div>
-                            <div class="btn-group">
+                            <div class="btn-group btn-group-slider">
                                 <button class="btn btn-default">
                                     Vaqtincha ish
                                 </button>
@@ -322,21 +370,26 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="__footer">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Barcha e’lonlar</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-10 col-md-10 col-md-9 text-right">
-                                    <div class="total">Namoyish etilyapdi <b>20</b> ta <b>53 897</b> tadan </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="filter__header">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Barcha e’lonlar</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-8 text-right">
+                                        <div class="total">Namoyish etilyapdi <b>20</b> ta <b>53 897</b> tadan </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="list__filters filter border">
@@ -542,11 +595,7 @@
 
                                 </div>
                             </div>
-                            <div class="list__items">
-                                <div class="__item">
 
-                                </div>
-                            </div>
                         </div>
                         <div class="col-lg-9">
                             <div class="list__vacancies">
@@ -560,6 +609,9 @@
                                         </div>
                                         <div class="organization">60-Umumta’lim maktabi</div>
                                         <div class="address">Andijon viloyati, Jalolquduq tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/portal.svg') ;">
+                                        </div>
                                         <div class="desc">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor
@@ -567,9 +619,7 @@
                                             nostrud exercitation ullamco
                                             laboris nisi ut aliquip ex ea commodo consequat…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/portal.svg') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -608,15 +658,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/asko.png') ;">
+                                        </div>
                                         <div class="desc">
                                             ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
                                             agentlarini ishga taklif qiladi.
                                             Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
                                             Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/asko.png') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -654,15 +705,16 @@
                                         </div>
                                         <div class="organization checked">60-Umumta’lim maktabi</div>
                                         <div class="address">Andijon viloyati, Jalolquduq tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/lukoil.png') ;">
+                                        </div>
                                         <div class="desc">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco
                                             laboris nisi ut aliquip ex ea commodo consequat…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/lukoil.png') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -699,15 +751,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/beeline.png') ;">
+                                        </div>
                                         <div class="desc">
                                             ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
                                             agentlarini ishga taklif qiladi.
                                             Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
                                             Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/beeline.png') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -744,15 +797,16 @@
                                         </div>
                                         <div class="organization checked">60-Umumta’lim maktabi</div>
                                         <div class="address">Andijon viloyati, Jalolquduq tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/unesco.png') ;">
+                                        </div>
                                         <div class="desc">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco
                                             laboris nisi ut aliquip ex ea commodo consequat…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/unesco.png') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -789,15 +843,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
-                                        <div class="desc">
-                                            ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
-                                            agentlarini ishga taklif qiladi.
-                                            Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
-                                            Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
-                                        </div>
                                         <div class="organization__logo"
                                             style="background-image: url('./image/portal.svg') ;">
                                         </div>
+                                        <div class="desc">
+                                            ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
+                                            agentlarini ishga taklif qiladi.
+                                            Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
+                                            Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
+                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -834,15 +889,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
-                                        <div class="desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco
-                                            laboris nisi ut aliquip ex ea commodo consequat…
-                                        </div>
                                         <div class="organization__logo"
                                             style="background-image: url('./image/korzinka.svg') ;">
                                         </div>
+                                        <div class="desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat…
+                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -879,15 +935,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/mitc.svg') ;">
+                                        </div>
                                         <div class="desc">
                                             ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
                                             agentlarini ishga taklif qiladi.
                                             Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
                                             Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/mitc.svg') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -924,15 +981,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/minzdrav.svg') ;">
+                                        </div>
                                         <div class="desc">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco
                                             laboris nisi ut aliquip ex ea commodo consequat…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/minzdrav.svg') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -969,15 +1027,16 @@
                                         </div>
                                         <div class="organization checked">Asko-Vostok MChJ QK ST</div>
                                         <div class="address">Toshkent shaxri, Yakkasaroy tumani</div>
+                                        <div class="organization__logo"
+                                            style="background-image: url('./image/murad-building.svg') ;">
+                                        </div>
                                         <div class="desc">
                                             ASKO-VOSTOK sug’urta tashkiloti butun Respublika bo’yicha sug’urta
                                             agentlarini ishga taklif qiladi.
                                             Ish tajribasi ahamiyatsiz, eng asosiysi ishga ma’suliyat bilan yondashish.
                                             Mijozlar bilan aloqa o’rnatish, tushuntirish ishlarini oborish…
                                         </div>
-                                        <div class="organization__logo"
-                                            style="background-image: url('./image/murad-building.svg') ;">
-                                        </div>
+
                                     </div>
                                     <div class="item-footer">
                                         <div class="btn btn-primary">
@@ -1005,6 +1064,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="text-center">
+                                <button class="filter_mobile_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 32 28">
+                                        <path id="Fabric_Icons" data-name="Fabric Icons"
+                                            d="M16-30v3.422l-12,12V-2H-4V-14.578l-12-12V-30Zm-2,2H-14v.578l12,12V-4H2V-15.422l12-12Z"
+                                            transform="translate(16 30)" fill="#f8f8f8" />
+                                    </svg>
+
+                                    <span>
+                                        Filtrlar
+                                    </span>
+                                </button>
+                            </div>
                             <nav class="pagination-row">
                                 <ul class="pagination">
                                     <li class="disabled">
@@ -1020,15 +1092,13 @@
                                     <li><a href="#">1</a></li>
                                     <li class="active"><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
                                     <li class="dots">
                                         <span>
                                             ...
                                         </span>
                                     </li>
                                     <li><a href="#">98</a></li>
-                                    <li >
+                                    <li>
                                         <a href="#" aria-label="Next">
                                             <span aria-hidden="true">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"

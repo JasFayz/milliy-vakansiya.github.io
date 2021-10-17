@@ -114,6 +114,32 @@ $(document).ready(function () {
         $('.vacancy__list .row').addClass('owl-carousel owl-theme');
         $('.employer__list .row').addClass('owl-carousel owl-theme');
         $('.vacancies__tab .tab-content .row').addClass('owl-carousel');
+        $('.btn-group-slider').addClass('owl-carousel owl-theme')
+
+
+        $('.btn-group-slider').owlCarousel({
+            items: 2,
+            loop: true,
+            margin: 10,
+            autoWidth: true,
+            dots: false,
+            nav: false,
+            autoHeight: true,
+            // center: true,
+            navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
+            responsive: {
+                600: {
+                    items: 6,
+                    // nav: true,
+                }
+            }
+        });
+
+        $('.swipe__btn').click(function () {
+            $('.statistic').toggleClass('hiden')
+        })
+
+
 
 
         $('.vacancy__list> .owl-carousel').owlCarousel({
@@ -149,6 +175,11 @@ $(document).ready(function () {
             dots: false,
             nav: false,
 
+        });
+
+        $('.filter_mobile_btn').click(function () {
+            $('.list__filters').toggleClass('open')
+            $('.filter__header').toggleClass('open')
         });
     }
     $('.video__play').click(function () {

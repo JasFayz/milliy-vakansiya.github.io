@@ -37,6 +37,11 @@
             margin-top    : 30px;
         }
 
+        & .btn-primary {
+            background-color: #0778D4;
+            border-color    : #0778D4;
+        }
+
         & .form-fields {
             & .form-group {
                 margin-bottom: 30px;
@@ -57,7 +62,7 @@
                 font-size     : 18px;
                 letter-spacing: -0.01em;
                 color         : #212121;
-                background    : url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 20px) 50% /24px 24px;
+                background    : #fff url('./../image/icon_arrow-down.svg')no-repeat calc(100% - 20px) 50% /24px 24px;
             }
 
             & .form-control {
