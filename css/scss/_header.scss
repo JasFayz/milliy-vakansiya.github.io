@@ -278,17 +278,17 @@
     }
 
     &__bottom {
-        border-bottom : 1px solid #EAEAEA;
-        padding-top   : 10px;
-        padding-bottom: 10px;
+        border-bottom: 1px solid #EAEAEA;
+
 
         & .breadcrumb {
-            background   : none;
-            margin-bottom: 0;
-            padding      : 0;
-            float        : left;
-            display      : table;
-
+            background    : none;
+            margin-bottom : 0;
+            padding       : 0;
+            float         : left;
+            display       : table;
+            padding-top   : 10px;
+            padding-bottom: 10px;
 
             &-item {
                 font-family   : "Segoe UI";
@@ -365,11 +365,30 @@
         }
 
         & .nav {
+            & .nav-item {
+                height      : 100%;
+                margin-right: 16px;
+            }
+
             & .nav-link {
+                height        : 100%;
+                padding-top   : 16px;
+                padding-bottom: 16px;
+                padding-left  : 0;
+                padding-right : 0;
+                border-bottom : 3px solid transparent;
+                border-radius : 0;
+                transition    : all 0.3s linear;
+
                 span {
                     font-size  : 18px;
                     line-height: 24px;
                     color      : #0078D4;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    border-bottom   : 3px solid #FFB900;
                 }
             }
         }
