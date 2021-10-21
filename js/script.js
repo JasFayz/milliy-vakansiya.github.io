@@ -10,9 +10,10 @@ $(document).ready(function () {
     }
 
 
-    $('.js_popup').click(function (e) {
+    $('.grouped').click(function (e) {
         var popup = $('.map_popup');
         var regionName = $(e.delegateTarget).attr('data-name');
+       
         popup.find('.title b').text(regionName);
         var left = (e.originalEvent.pageX - popup.width() / 2 - 15) + 'px';
         var top = (e.originalEvent.pageY - popup.height() - 50) + 'px';
