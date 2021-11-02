@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.grouped').click(function (e) {
         var popup = $('.map_popup');
         var regionName = $(e.delegateTarget).attr('data-name');
-       
+
         popup.find('.title b').text(regionName);
         var left = (e.originalEvent.pageX - popup.width() / 2 - 15) + 'px';
         var top = (e.originalEvent.pageY - popup.height() - 50) + 'px';
@@ -114,7 +114,7 @@ $(document).ready(function () {
     if ($(document).width() < 991) {
         $('.vacancy__list .row').addClass('owl-carousel owl-theme');
         $('.employer__list .row').addClass('owl-carousel owl-theme');
-        $('.vacancies__tab .tab-content .row').addClass('owl-carousel');
+        $('#vacancies__tab-slider').addClass('owl-carousel');
         $('.btn-group-slider').addClass('owl-carousel owl-theme')
 
 
@@ -167,7 +167,7 @@ $(document).ready(function () {
             dots: false,
             nav: false,
         });
-        $('.vacancies__tab .tab-content .row ').owlCarousel({
+        $('#vacancies__tab-slider').owlCarousel({
             items: 1,
             loop: true,
             margin: 10,
