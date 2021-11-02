@@ -1,8 +1,9 @@
 .header {
     position: absolute;
-    top     : 30px;
+    top     : 0;
     left    : 0;
     right   : 0;
+
 
     & .container {
         position: relative;
@@ -195,12 +196,14 @@
     }
 
     & .mobile__btn {
-        position: absolute;
-        right   : 100%;
-        top     : 25px;
+        // position: absolute;
+        // right   : 100%;
+        // top     : 25px;
 
         & .btn {
-            background: none;
+            background    : none;
+            padding-top   : 0;
+            padding-bottom: 0;
 
             & img {
                 transition: all 0.3s linear;
@@ -405,6 +408,7 @@
                 float            : right;
                 margin-right     : 40px;
 
+
                 &:first-child {
                     margin-right: 0;
 
@@ -420,13 +424,14 @@
 
 
                 &>a {
-                    padding       : 0;
-                    font-size     : 16px;
-                    line-height   : 21px;
-                    color         : #0078D4;
+                    padding    : 0;
+                    font-size  : 16px;
+                    line-height: 21px;
+
                     display       : table-cell;
                     vertical-align: middle;
                     padding-left  : 30px;
+                    color         : white;
 
                     & span {
                         transition   : border-bottom 0.3s linear;
@@ -454,6 +459,11 @@
                 & .nav-link {
                     border-bottom: 2px solid #FFB900;
                     border-radius: 0;
+
+                    &:focus {
+                        background: none;
+
+                    }
                 }
             }
         }

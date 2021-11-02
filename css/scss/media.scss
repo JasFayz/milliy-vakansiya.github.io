@@ -194,11 +194,14 @@
     .on-tab {
         display: block !important;
     }
-
+    .intro .mobile__tab {
+        display: block;
+    }
 
 }
 
 @media (max-width: 776px) {
+    
     .header {
         top                 : 0;
         // padding-top   : 5px;

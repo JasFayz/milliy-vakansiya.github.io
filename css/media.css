@@ -157,6 +157,9 @@
   .on-tab {
     display: block !important;
   }
+  .intro .mobile__tab {
+    display: block;
+  }
 }
 
 @media (max-width: 776px) {

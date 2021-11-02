@@ -138,10 +138,13 @@
     }
 
     .map {
-        padding-right: 136px;
+        // padding-right: 136px;
+        text-align: center;
     }
 
-
+    .mobile__tab {
+        display: none;
+    }
     .statistic {
         padding-top   : 33px;
         padding-bottom: 132px;
@@ -373,7 +376,7 @@
 
 .main_nav {
     & .nav {
-        display      : table;
+        display      : table-cell;
         text-align   : center;
         // width     : 100%;
         margin       : 0 auto;

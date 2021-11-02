@@ -156,7 +156,7 @@ body {
 
 .header {
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -334,14 +334,10 @@ body {
   outline: 3px solid #FFB900;
 }
 
-.header .mobile__btn {
-  position: absolute;
-  right: 100%;
-  top: 25px;
-}
-
 .header .mobile__btn .btn {
   background: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header .mobile__btn .btn img {
@@ -553,10 +549,10 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 21px;
-  color: #0078D4;
   display: table-cell;
   vertical-align: middle;
   padding-left: 30px;
+  color: white;
 }
 
 .header__top .nav > li > a span {
@@ -584,6 +580,10 @@ body {
 .header__top .nav-lang .nav-link {
   border-bottom: 2px solid #FFB900;
   border-radius: 0;
+}
+
+.header__top .nav-lang .nav-link:focus {
+  background: none;
 }
 
 .header__top .radio-inline {
@@ -783,7 +783,11 @@ body {
 }
 
 .intro .map {
-  padding-right: 136px;
+  text-align: center;
+}
+
+.intro .mobile__tab {
+  display: none;
 }
 
 .intro .statistic {
@@ -1007,7 +1011,7 @@ body {
 }
 
 .main_nav .nav {
-  display: table;
+  display: table-cell;
   text-align: center;
   margin: 0 auto;
   -webkit-transform: translateY(0);
