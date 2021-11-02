@@ -170,7 +170,7 @@
                         // outline: 3px solid #FFB900;
 
                         &::before {
-                            content         : '';
+                            content         : none;
                             display         : block;
                             width           : 20px;
                             height          : 20px;

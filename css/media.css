@@ -206,6 +206,9 @@
     background: #2B88D8;
     border-radius: 0;
   }
+  .header__nav.inner .nav .nav-item.active::before {
+    content: '';
+  }
   .intro .tab-form {
     padding-top: 30px;
   }

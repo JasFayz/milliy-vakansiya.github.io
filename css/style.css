@@ -317,7 +317,7 @@ body {
 }
 
 .header__nav.inner .nav .nav-item.active::before {
-  content: '';
+  content: none;
   display: block;
   width: 20px;
   height: 20px;
