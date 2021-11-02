@@ -1078,14 +1078,12 @@ body {
 .vacancies__section {
   background: #DEECF9;
   padding-bottom: 50px;
-  padding-top: 60px;
 }
 
 .vacancies__tab {
   -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
   position: relative;
-  border-radius: 30px;
 }
 
 .vacancies__tab .nav-tabs .nav-item.active .nav-link {
@@ -1124,7 +1122,6 @@ body {
 .vacancies__tab .tab-content {
   padding: 40px 40px 8px 40px;
   background: white;
-  border-radius: 30px;
 }
 
 .vacancies__tab .tab-content .row-no-gutters {
@@ -1141,12 +1138,11 @@ body {
   transition: all 0.3s linear;
   margin-right: 32px;
   position: relative;
-  border-radius: 20px;
 }
 
 .vacancies__tab .tab-content .card:hover {
-  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
 }
 
 .vacancies__tab .tab-content .card:hover .name {
@@ -1179,87 +1175,6 @@ body {
   color: #F8F8F8;
   height: 49px;
   overflow: hidden;
-}
-
-.vacancies__tab .search__form {
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 11px;
-  background: #C7E0F4;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-}
-
-.vacancies__tab .search__form .input-group {
-  display: block;
-  border-radius: 11px;
-  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
-  position: relative;
-  overflow: hidden;
-}
-
-.vacancies__tab .search__form .input-group::after {
-  clear: both;
-  content: '';
-  display: block;
-}
-
-.vacancies__tab .search__form .input__field {
-  height: 48px;
-  position: relative;
-}
-
-.vacancies__tab .search__form .input__field .form-control {
-  height: 100%;
-  border-radius: 11px;
-  border: 1px solid #71AFE5;
-  background: white;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-  padding: 13px 20px;
-  padding-right: calc(15% + 20px);
-}
-
-.vacancies__tab .search__form .input__btn {
-  height: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 20;
-}
-
-.vacancies__tab .search__form .input__btn .btn {
-  display: block;
-  width: 100%;
-  background: #0078D4;
-  color: white;
-  height: 100%;
-  border-top-right-radius: 11px;
-  border-bottom-right-radius: 11px;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-  border: none;
-  padding-left: 80px;
-  padding-right: 46px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 64 64'%3E%3Cg id='Сгруппировать_10544' data-name='Сгруппировать 10544' transform='translate(-2392 -1452)'%3E%3Crect id='Прямоугольник_13738' data-name='Прямоугольник 13738' width='64' height='64' transform='translate(2392 1452)' fill='none'/%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M5.625-36a12.225,12.225,0,0,1,3.287.439,12.226,12.226,0,0,1,2.953,1.248,12.534,12.534,0,0,1,2.5,1.942,12.534,12.534,0,0,1,1.942,2.5,12.226,12.226,0,0,1,1.248,2.953A12.225,12.225,0,0,1,18-23.625a12.225,12.225,0,0,1-.439,3.287,12.226,12.226,0,0,1-1.248,2.953,12.534,12.534,0,0,1-1.942,2.5,12.534,12.534,0,0,1-2.5,1.942,12.226,12.226,0,0,1-2.953,1.248,12.225,12.225,0,0,1-3.287.439,12.128,12.128,0,0,1-4.21-.738,12.637,12.637,0,0,1-3.7-2.127L-16.084-.334A1.081,1.081,0,0,1-16.875,0a1.081,1.081,0,0,1-.791-.334A1.081,1.081,0,0,1-18-1.125a1.081,1.081,0,0,1,.334-.791l13.781-13.8a12.637,12.637,0,0,1-2.127-3.7,12.128,12.128,0,0,1-.738-4.21,12.225,12.225,0,0,1,.439-3.287,12.226,12.226,0,0,1,1.248-2.953,12.534,12.534,0,0,1,1.942-2.5,12.534,12.534,0,0,1,2.5-1.942,12.226,12.226,0,0,1,2.953-1.248A12.225,12.225,0,0,1,5.625-36Zm0,22.5a9.8,9.8,0,0,0,3.938-.8,10.281,10.281,0,0,0,3.217-2.171,10.281,10.281,0,0,0,2.171-3.217,9.8,9.8,0,0,0,.8-3.937,9.8,9.8,0,0,0-.8-3.937,10.281,10.281,0,0,0-2.171-3.217A10.281,10.281,0,0,0,9.563-32.95a9.8,9.8,0,0,0-3.937-.8,9.8,9.8,0,0,0-3.937.8,10.281,10.281,0,0,0-3.217,2.171A10.281,10.281,0,0,0-3.7-27.562a9.8,9.8,0,0,0-.8,3.938,9.8,9.8,0,0,0,.8,3.938,10.281,10.281,0,0,0,2.171,3.217A10.281,10.281,0,0,0,1.688-14.3,9.8,9.8,0,0,0,5.625-13.5Z' transform='translate(2424 1502)' fill='%23f8f8f8'/%3E%3C/g%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: 45px 50%;
-}
-
-.vacancies__tab .search__form .input__btn .btn:focus {
-  border: none;
-  outline: none;
-}
-
-.vacancies__tab .search__form .input_setting-btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: calc(15% + 20px);
-  z-index: 50;
-  cursor: pointer;
 }
 
 .vacancies__benefits {
@@ -1319,7 +1234,6 @@ body {
   background: white;
   -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
 }
 
 .vacancies__latest .section__title {
@@ -1341,15 +1255,11 @@ body {
   text-decoration: none;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .vacancies__latest .vacancy__info:hover {
-  background: #EFF6FC;
-  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
 }
 
 .vacancies__latest .vacancy__info .name {
@@ -1612,7 +1522,7 @@ body {
 }
 
 .tips-carousel .item:hover {
-  background: rgba(0, 69, 120, 0.5);
+  background: #333333;
 }
 
 .tips-carousel .item .number {
@@ -1699,7 +1609,6 @@ body {
   position: relative;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  border-radius: 20px;
 }
 
 .employers__card .employers__item:hover {
@@ -1824,10 +1733,6 @@ body {
   background-color: #F8F8F8;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  margin-bottom: 20px;
 }
 
 .useful-links__item:hover {

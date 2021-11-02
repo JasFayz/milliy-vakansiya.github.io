@@ -25,6 +25,7 @@
             margin-bottom  : 32px;
             position       : relative;
             transition     : all 0.3s linear;
+            border-radius  : 20px;
 
             &:hover {
                 background: #DEECF9;
@@ -156,6 +157,9 @@
         // padding         : 24px;
         background-color   : #F8F8F8;
         transition         : all 0.3s linear;
+        border-radius      : 20px;
+        box-shadow         : 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+        margin-bottom      : 20px;
 
         &:hover {
             background: #DEECF9;
