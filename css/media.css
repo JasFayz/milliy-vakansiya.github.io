@@ -43,11 +43,6 @@
   .no-desktop {
     display: none !important;
   }
-  .header__nav {
-    margin-top: 25px;
-    text-align: center;
-    float: none;
-  }
   .header__nav .nav {
     height: auto;
     display: inline-block;
@@ -168,6 +163,21 @@
     background: #0078D4;
     z-index: 5;
   }
+  .header__top {
+    display: none;
+  }
+  .header__bottom {
+    padding: 0;
+  }
+  .header__nav {
+    padding-right: 0;
+  }
+  .header__nav .nav li:not(.mobile_button) {
+    display: none;
+  }
+  .header__logo .text {
+    display: none;
+  }
   .header.inner .header__top,
   .header.inner .header__bottom {
     display: none;
@@ -179,10 +189,6 @@
   }
   .header.inner .header__nav {
     padding-right: 74px;
-  }
-  .header__nav {
-    padding-right: 74px;
-    text-align: right;
   }
   .header .mobile__btn {
     right: 0;

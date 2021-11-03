@@ -1,12 +1,15 @@
 $(document).ready(function () {
 
-    if ($(document).width() < 776) {
-        $('.mobile__btn button').click(function () {
+    // if ($(document).width() < 776) {
+        $('.mobile_button button').click(function () {
             $('.main_nav').toggleClass('show')
+           
         });
         $('.js_close_main-nav').click(function () {
             $('.main_nav').removeClass('show')
-        });
+        // });
+
+
     }
 
 
