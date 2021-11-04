@@ -18,14 +18,137 @@ body {
   z-index: 10;
 }
 
-.header__top {
-  padding-top: 15px;
-  padding-bottom: 14px;
+.header .nav .open > a {
+  background: transparent;
 }
 
-.header__bottom {
-  padding-top: 38px;
-  padding-bottom: 38px;
+.header.inner {
+  position: relative;
+}
+
+.header.inner .header__top {
+  padding: 0;
+}
+
+.header.inner .header__middle {
+  background: url("./../image/intro_bg.png") no-repeat 0/cover;
+}
+
+.header.inner .header__quick-nav .nav a {
+  color: #0078D4;
+}
+
+.header.inner .header__quick-nav .nav a .icon svg path {
+  fill: #0078D4;
+}
+
+.header.inner .header__checkbox .radio label {
+  color: #0078D4;
+}
+
+.header.inner .header__checkbox .radio label::before {
+  border-color: #0078D4;
+}
+
+.header.inner .header__checkbox .radio label::after {
+  background: #0078D4;
+}
+
+.header.inner .header__nav .nav li.rounded > a {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.header.inner .header__nav .nav li.rounded > a .icon {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header.inner .header__middle .dropdown-menu {
+  border-radius: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header.inner .header__middle .dropdown-menu-title {
+  padding: 5px 11px;
+  background: #DEECF9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #0078D4;
+  font-weight: 600;
+}
+
+.header.inner .header__middle .dropdown-menu .dropdown-item {
+  width: 100%;
+  display: block;
+  color: #333333;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 16px;
+  color: #333;
+}
+
+.header.inner .header__middle .dropdown-menu .dropdown-item:last-child {
+  border-radius: 10px;
+}
+
+.header.inner .header__nav .nav li {
+  padding-right: 20px;
+}
+
+.header.inner .header__nav .nav li > a {
+  border-radius: 50px;
+  text-transform: initial;
+  font-weight: 400;
+  padding: 13px 26px 13px 58px;
+  outline: 2px solid #71AFE5;
+  border: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header.inner .header__nav .nav li > a:hover {
+  outline: 2px solid #FFB900;
+  border: none;
+}
+
+.header.inner .header__nav .nav li > a:focus {
+  background: transparent;
+  outline-offset: 0;
+}
+
+.header.inner .header__nav .nav li > a .icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 33px;
+}
+
+.header.inner .header__nav .nav li > a .icon svg {
+  vertical-align: middle;
+}
+
+.header__top {
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.header__middle {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header__logo {
@@ -84,7 +207,7 @@ body {
 }
 
 .header__nav .nav li {
-  height: 82px;
+  height: 97px;
   display: table-cell;
   vertical-align: middle;
   float: none;
@@ -276,6 +399,48 @@ body {
 }
 
 .header__quick-nav .nav a .icon svg {
+  vertical-align: middle;
+}
+
+.header__bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #EAEAEA;
+}
+
+.header__bottom .breadcrumb {
+  padding-left: 26px;
+  float: left;
+  margin-bottom: 0;
+  background: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 29.406 27.422'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M16-29.422,30.7-14.7,29.3-13.3,28-14.578V-2H18V-12H14V-2H4V-14.578L2.7-13.3,1.3-14.7ZM26-4V-16.578l-10-10-10,10V-4h6V-14h8V-4Z' transform='translate(-1.297 29.422)' fill='%230078d4'/%3E%3C/svg%3E%0A");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+.header__bottom .breadcrumb > .active {
+  font-weight: 600;
+  color: #767676;
+}
+
+.header__bottom .breadcrumb a {
+  background: none;
+  color: #767676;
+}
+
+.header__bottom .nav {
+  float: right;
+}
+
+.header__bottom .nav a {
+  padding: 3px 15px;
+}
+
+.header__bottom .nav a:hover {
+  background: transparent;
+}
+
+.header__bottom .nav a svg {
   vertical-align: middle;
 }
 

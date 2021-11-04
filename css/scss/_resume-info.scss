@@ -108,6 +108,7 @@
             padding         : 20px 54px 28px 54px;
             position        : relative;
             margin-bottom   : 30px;
+            border-radius   : 20px;
 
             & .__title {
                 font-family   : "Segoe UI";
@@ -178,6 +179,7 @@
             transition   : all 0.3s linear;
             margin-right : 30px;
             margin-bottom: 30px;
+            border-radius: 10px;
         }
 
         & .btn-warning {
@@ -186,6 +188,7 @@
             background-repeat  : no-repeat !important;
             background-position: 26px 52% !important;
             color              : #333333;
+
         }
 
         & .btn-primary {

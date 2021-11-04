@@ -47,6 +47,23 @@
 }
 
 @media (max-width: 1200px) {
+    .header__top .container {
+        text-align: right;
+    }
+
+    .header__checkbox,
+    .header__quick-nav {
+        float: none;
+    }
+
+    .header__quick-nav {
+        display: inline-block;
+    }
+
+    .header__bottom {
+        padding-top: 0;
+    }
+
     .no-tab {
         display: none !important;
     }
@@ -59,7 +76,12 @@
     //     float: none;
     // }
 
-
+    .header.inner .header__nav .nav li:not(.rounded , .mobile_button) {
+        display: none;
+    }
+    .header.inner .header__nav .nav li.rounded{
+        display: table-cell;
+    }
     .header__nav .nav {
         height : auto;
         display: inline-block;
@@ -90,6 +112,18 @@
 }
 
 @media (max-width: 991px) {
+    .header__logo {
+        width: auto;
+    }
+
+    .header__logo .text {
+        display: none;
+    }
+
+    .header__nav .nav li {
+        padding-right: 20px;
+    }
+
     .header__middle .navbar .nav {
         display   : block;
         float     : none;
@@ -197,6 +231,9 @@
 }
 
 @media (max-width: 776px) {
+    .header__nav .nav {
+        display: block;
+    }
 
     .header {
         top                 : 0;
@@ -207,12 +244,25 @@
         z-index             : 5;
     }
 
+    .vacancies__tab .search__form .input_setting-btn {
+        right: 140px;
+    }
+
+    .vacancies__tab .search__form .input__btn .btn .text {
+        display: none;
+    }
+
     .header__top {
         display: none;
     }
 
-    .header__bottom {
-        padding: 0;
+    .header__nav .nav li {
+        padding-left: 20px;
+    }
+
+    .header__middle {
+        padding      : 0;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.56);
     }
 
     .header__nav {
@@ -222,9 +272,11 @@
     .header__nav .nav li:not(.mobile_button) {
         display: none;
     }
+
     .header__logo .text {
         display: none;
     }
+
     .header.inner .header__top,
     .header.inner .header__bottom {
         display: none;
@@ -555,13 +607,10 @@
         padding-right: 64px;
     }
 
-    .header.inner .header__nav .nav {
-        display: none;
+    .header.inner .header__nav {
+        padding: 0;
     }
 
-    .header.inner .header__nav .nav {
-        display: none;
-    }
 
     .header.inner .header__nav.inner .nav {
         display: block;
