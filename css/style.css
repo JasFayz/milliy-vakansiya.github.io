@@ -2222,7 +2222,7 @@ body {
 }
 
 .simple-card .card-body .btn {
-  border-radius: 0;
+  border-radius: 25px;
   padding: 11px 33px;
   margin-right: 20px;
   border-radius: 10px;
@@ -2239,6 +2239,7 @@ body {
 
 .simple-card .card-body .btn-primary {
   background: #0778D4 !important;
+  border-radius: 25px;
 }
 
 .simple-card .card-body .btn-outline-primary {
@@ -2246,6 +2247,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   border-color: #0778D4;
+  border-radius: 25px;
 }
 
 .simple-card .card-body .btn-link {
@@ -3064,6 +3066,7 @@ body {
 
 .v-page .v-card .actions .btn {
   margin-bottom: 26px;
+  border-radius: 25px;
 }
 
 .v-page .v-card .request {

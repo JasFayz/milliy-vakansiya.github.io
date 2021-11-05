@@ -69,7 +69,7 @@
         }
 
         .btn {
-            border-radius: 0;
+            border-radius: 25px;
             padding      : 11px 33px;
             margin-right : 20px;
             border-radius: 10px;
@@ -85,6 +85,7 @@
 
         & .btn-primary {
             background: #0778D4 !important;
+            border-radius: 25px;
 
         }
 
@@ -93,6 +94,7 @@
             padding-left : 25px;
             padding-right: 25px;
             border-color : #0778D4;
+            border-radius: 25px;
 
 
         }
