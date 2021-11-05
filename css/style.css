@@ -1784,6 +1784,7 @@ body {
           box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
   padding: 40px;
   margin-top: 90px;
+  border-radius: 30px;
 }
 
 .employers__card .row-no-gutters {
@@ -1970,7 +1971,7 @@ body {
 }
 
 .useful-links__item .content .name {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   line-height: 15px;
   color: #666;
@@ -1980,7 +1981,7 @@ body {
 }
 
 .useful-links__item .content .link {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
   font-weight: bold;
   letter-spacing: -0.02em;
