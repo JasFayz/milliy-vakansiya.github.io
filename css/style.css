@@ -395,6 +395,66 @@ body {
   border-color: #FFB900;
 }
 
+.header__nav .nav .dropdown-menu {
+  border-radius: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: calc(100% - 20px);
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #C7E0F4;
+}
+
+.header__nav .nav .dropdown-menu::before {
+  content: '';
+  display: block;
+  height: 23px;
+  width: 23px;
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  -webkit-transform: rotate(-45deg) translateX(calc(-50% - 12px));
+          transform: rotate(-45deg) translateX(calc(-50% - 12px));
+  border: 1px solid #C7E0F4;
+}
+
+.header__nav .nav a.dropdown-item {
+  padding: 11px 16px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 18px;
+  color: #3C3C3C;
+  display: block;
+  text-transform: initial;
+  white-space: nowrap;
+  text-decoration: none;
+  background: white;
+  position: relative;
+  z-index: 2;
+}
+
+.header__nav .nav a.dropdown-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header__nav .nav a.dropdown-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header__nav .nav a.dropdown-item:hover {
+  color: #0078D4;
+  border-color: transparent;
+}
+
 .header__checkbox {
   float: left;
 }
@@ -1042,21 +1102,33 @@ body {
 }
 
 .map_popup {
-  padding: 15px;
   background: white;
   position: absolute;
   top: 0;
   right: 0;
-  width: 180px;
+  width: 230px;
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  border-radius: 10px;
+  border: 1px solid #C7E0F4;
 }
 
 .map_popup.show {
   z-index: 100;
   opacity: 1;
+}
+
+.map_popup .title__wrapper {
+  background: #EFF6FC;
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.map_popup .popup__wrapper {
+  padding: 10px 15px;
 }
 
 .map_popup .title {
@@ -1082,6 +1154,27 @@ body {
   width: 100%;
 }
 
+.map_popup .popup-table .icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.map_popup .popup-table .text {
+  padding-left: 25px;
+}
+
+.map_popup .popup-table td {
+  padding: 5px;
+  position: relative;
+}
+
+.map_popup .popup-table svg {
+  margin-right: 9px;
+}
+
 .map_popup .popup-table td:nth-child(2) {
   text-align: right;
   font-weight: 600;
@@ -1091,17 +1184,36 @@ body {
   color: #0078d4;
 }
 
+.map_popup .popup__link {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: #0078d4;
+  text-align: center;
+  background: white;
+  z-index: 5;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 19px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: block;
+}
+
 .map_popup::before {
   content: '';
   display: block;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
   background: white;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(-45deg);
           transform: translateX(-50%) rotate(-45deg);
   bottom: -13px;
+  border: 1px solid #C7E0F4;
 }
 
 .main_nav .nav {
@@ -2242,12 +2354,22 @@ body {
   border-radius: 25px;
 }
 
+.simple-card .card-body .btn-primary:focus {
+  outline: none;
+  border: none;
+}
+
 .simple-card .card-body .btn-outline-primary {
   margin-right: 0;
   padding-left: 25px;
   padding-right: 25px;
   border-color: #0778D4;
   border-radius: 25px;
+}
+
+.simple-card .card-body .btn-outline-primary:focus {
+  outline: none;
+  border: none;
 }
 
 .simple-card .card-body .btn-link {
@@ -2310,7 +2432,7 @@ body {
 }
 
 .simple-card.step-2 .card-footer .btn {
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 11px 33px;
   margin-right: 30px;
   color: #333333;
@@ -2319,6 +2441,10 @@ body {
   margin-bottom: 20px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.simple-card.step-2 .card-footer .btn:focus {
+  outline: none;
 }
 
 .simple-card.step-2 .card-footer .btn .icon {
@@ -2871,6 +2997,7 @@ body {
   border-radius: 10px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  border-radius: 25px;
 }
 
 .resume__make .btn:hover {

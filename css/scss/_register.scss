@@ -84,8 +84,13 @@
         }
 
         & .btn-primary {
-            background: #0778D4 !important;
+            background   : #0778D4 !important;
             border-radius: 25px;
+
+            &:focus {
+                outline: none;
+                border : none;
+            }
 
         }
 
@@ -96,6 +101,10 @@
             border-color : #0778D4;
             border-radius: 25px;
 
+            &:focus {
+                outline: none;
+                border : none;
+            }
 
         }
 
@@ -164,7 +173,7 @@
 
         & .card-footer {
             .btn {
-                border-radius: 10px;
+                border-radius: 25px;
                 padding      : 11px 33px;
                 margin-right : 30px;
                 color        : #333333;
@@ -172,6 +181,11 @@
                 padding-left : 47px;
                 margin-bottom: 20px;
                 transition   : all 0.3s linear;
+
+                &:focus {
+                    outline: none;
+                    
+                }
 
                 & .icon {
                     position : absolute;

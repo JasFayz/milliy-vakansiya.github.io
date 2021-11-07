@@ -315,19 +315,34 @@
     }
 
     &_popup {
-        padding   : 15px;
-        background: white;
-        position  : absolute;
-        top       : 0;
-        right     : 0;
-        width     : 180px;
-        z-index   : -1;
-        opacity   : 0;
-        transition: all 0.3s ease-in;
+
+        background   : white;
+        position     : absolute;
+        top          : 0;
+        right        : 0;
+        width        : 230px;
+        z-index      : -1;
+        opacity      : 0;
+        transition   : all 0.3s ease-in;
+        border-radius: 10px;
+        border       : 1px solid #C7E0F4;
+
 
         &.show {
             z-index: 100;
             opacity: 1;
+        }
+
+        & .title__wrapper {
+            background             : #EFF6FC;
+            padding                : 10px 15px;
+            border-top-left-radius : 10px;
+            border-top-right-radius: 10px;
+        }
+
+        & .popup__wrapper {
+            padding: 10px 15px;
+
         }
 
         & .title {
@@ -337,6 +352,7 @@
             color         : #3c3c3c;
             width         : 50%;
             margin-bottom : 5px;
+
 
             & b {
                 color      : #0078D4;
@@ -352,6 +368,27 @@
             color         : #666;
             width         : 100%;
 
+            & .icon {
+                position : absolute;
+                top      : 50%;
+                left     : 5px;
+                transform: translateY(-50%);
+            }
+
+            & .text {
+                padding-left: 25px;
+            }
+
+
+            & td {
+                padding : 5px;
+                position: relative;
+            }
+
+            & svg {
+                margin-right: 9px;
+            }
+
             & td:nth-child(2) {
                 text-align    : right;
                 font-weight   : 600;
@@ -362,16 +399,36 @@
             }
         }
 
+        & .popup__link {
+            font-family               : "Segoe UI";
+            font-weight               : normal;
+            font-size                 : 18px;
+            letter-spacing            : -0.01em;
+            color                     : #0078d4;
+            text-align                : center;
+            background                : white;
+            z-index                   : 5;
+            position                  : relative;
+            padding-top               : 14px;
+            padding-bottom            : 19px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius : 10px;
+            display                   : block;
+        }
+
         &::before {
-            content   : '';
-            display   : block;
-            width     : 26px;
-            height    : 26px;
+            content      : '';
+            display      : block;
+            width        : 30px;
+            height       : 30px;
+            border-radius: 5px;
+
             background: white;
             position  : absolute;
             left      : 50%;
             transform : translateX(-50%) rotate(-45deg);
             bottom    : -13px;
+            border    : 1px solid #C7E0F4;
         }
     }
 }

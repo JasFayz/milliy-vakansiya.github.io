@@ -27,6 +27,7 @@
             margin-bottom: 20px;
             border-radius: 10px;
             transition   : all 0.3s linear;
+            border-radius: 25px;
 
             &:hover {
                 background: darken($color: #0778D4, $amount: 10);
