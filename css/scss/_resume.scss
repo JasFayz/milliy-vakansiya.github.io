@@ -66,6 +66,7 @@
 
             & .control-label {
                 text-align    : left;
+                padding-left  : 0;
                 padding-top   : 12px;
                 font-weight   : 600;
                 font-size     : 18px;
@@ -120,6 +121,7 @@
 
             & .radio {
                 margin-bottom: 20px;
+                margin-right : 15px;
 
                 & input:checked+label {
                     &::after {
@@ -143,6 +145,119 @@
                 }
 
 
+                &-square {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    & input:checked+label {
+                        background: #EAEAEA;
+                        color     : #0078D4;
+                        border    : 1px solid #0078D4;
+
+                        &::after {
+                            content: none;
+                        }
+                    }
+
+                    & label {
+                        padding-left : 0;
+                        width        : 50px;
+                        height       : 50px;
+                        text-align   : center;
+                        line-height  : 48px;
+                        border-radius: 5px;
+                        border       : 1px solid #D0D0D0;
+                        box-shadow   : inset 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+
+                        &::before {
+                            content         : none;
+                            // width        : 100%;
+                            // height       : 100%;
+                            // border-radius: 5px;
+                            // border-color : #D0D0D0;
+                        }
+
+                        &::after {
+                            content      : none;
+                            width        : 100%;
+                            height       : 100%;
+                            border       : 1px solid #0078D4;
+                            border-radius: 5px;
+                            background   : transparent;
+                            left         : 0;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .checkbox {
+
+                & input[type=checkbox] {
+                    position: absolute;
+                    opacity : 0;
+                    z-index : -1;
+                }
+
+                & input:checked+label {
+                    &:after {
+                        content: '';
+                        height : 15px;
+                        width  : 5px;
+                    }
+                }
+
+                & label {
+                    padding-left  : 40px;
+                    position      : relative;
+                    font-family   : "Segoe UI";
+                    font-weight   : normal;
+                    font-size     : 18px;
+                    letter-spacing: -0.01em;
+                    color         : #212121;
+
+                    &::before {
+                        content  : '';
+                        display  : block;
+                        width    : 24px;
+                        height   : 24px;
+                        position : absolute;
+                        left     : 0;
+                        top      : 50%;
+                        transform: translateY(-50%);
+                        border   : 2px solid #107C10;
+                    }
+
+                    &::after {
+                        content      : none;
+                        display      : block;
+                        height       : 0;
+                        width        : 0;
+                        position     : absolute;
+                        top          : 4px;
+                        left         : 10px;
+                        transform    : rotate(45deg);
+                        border-bottom: 2px solid #107C10;
+                        border-right : 2px solid #107C10;
+                        transition   : all 0.4s linear;
+                    }
+                }
+            }
+
+            & .btn-del-lang {
+                border-radius: 0;
+                background   : none;
+                position     : absolute;
+                top          : 3px;
+                left         : calc(100% - 10px);
+
+                &:focus {
+                    border    : none;
+                    outline   : none;
+                    box-shadow: none;
+                }
             }
 
             & .input-adon {
@@ -157,10 +272,7 @@
                 background-image   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 30 30'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M15-2a14.859,14.859,0,0,1-3.992-.531A15.064,15.064,0,0,1,7.422-4.039,14.928,14.928,0,0,1,4.383-6.383,14.928,14.928,0,0,1,2.039-9.422,15.064,15.064,0,0,1,.531-13.008,14.859,14.859,0,0,1,0-17a14.859,14.859,0,0,1,.531-3.992,15.064,15.064,0,0,1,1.508-3.586,14.928,14.928,0,0,1,2.344-3.039,14.928,14.928,0,0,1,3.039-2.344,15.064,15.064,0,0,1,3.586-1.508A14.859,14.859,0,0,1,15-32a14.859,14.859,0,0,1,3.992.531,15.064,15.064,0,0,1,3.586,1.508,14.928,14.928,0,0,1,3.039,2.344,14.928,14.928,0,0,1,2.344,3.039,15.064,15.064,0,0,1,1.508,3.586A14.859,14.859,0,0,1,30-17a14.859,14.859,0,0,1-.531,3.992,15.064,15.064,0,0,1-1.508,3.586,14.928,14.928,0,0,1-2.344,3.039,14.928,14.928,0,0,1-3.039,2.344,15.064,15.064,0,0,1-3.586,1.508A14.859,14.859,0,0,1,15-2Zm0-28a12.62,12.62,0,0,0-3.453.469,13.317,13.317,0,0,0-3.1,1.313,12.922,12.922,0,0,0-2.633,2.031,12.922,12.922,0,0,0-2.031,2.633,13.281,13.281,0,0,0-1.312,3.109A12.646,12.646,0,0,0,2-17a12.646,12.646,0,0,0,.469,3.445,13.281,13.281,0,0,0,1.313,3.109A12.922,12.922,0,0,0,5.813-7.812,12.922,12.922,0,0,0,8.445-5.781a13.317,13.317,0,0,0,3.1,1.313A12.62,12.62,0,0,0,15-4a12.646,12.646,0,0,0,3.445-.469,13.281,13.281,0,0,0,3.109-1.312,12.922,12.922,0,0,0,2.633-2.031,12.922,12.922,0,0,0,2.031-2.633,13.317,13.317,0,0,0,1.313-3.1A12.62,12.62,0,0,0,28-17a12.646,12.646,0,0,0-.469-3.445,13.281,13.281,0,0,0-1.312-3.109,12.922,12.922,0,0,0-2.031-2.633,12.922,12.922,0,0,0-2.633-2.031,13.281,13.281,0,0,0-3.109-1.312A12.646,12.646,0,0,0,15-30ZM14-20h2v10H14Zm0-4h2v2H14Z' transform='translate(0 32)' fill='%23e81123'/%3E%3C/svg%3E%0A");
                 background-position: 20px 5px;
                 background-repeat  : no-repeat;
-
             }
-
-
 
             & .sallary_field {
                 padding-left : 20px;
@@ -177,65 +289,130 @@
                 font-size       : 18px;
                 letter-spacing  : -0.01em;
                 color           : #666;
-
             }
+
+
         }
     }
 }
 
-.slidecontainer {
-    width: 100%;
-    /* Width of the outside container */
+.range__slider {
+    width      : 100%;
+    padding-top: 20px;
+
+    & label {
+        display       : table-cell;
+        vertical-align: middle;
+        font-family   : "Segoe UI";
+        font-weight   : normal;
+        font-size     : 18px;
+        letter-spacing: -0.01em;
+        line-height   : 22px;
+        text-align    : left;
+        color         : #767676;
+
+    }
+
+    &-wrapper {
+        display       : table-cell;
+        width         : 100%;
+        vertical-align: middle;
+        padding-left  : 8px;
+    }
 }
 
-/* The slider itself */
-.slider {
-    -webkit-appearance: none;
-    /* Override default CSS styles */
-    appearance        : none;
-    width             : 100%;
-    /* Full-width */
-    height            : 25px;
-    /* Specified height */
-    background        : #d3d3d3;
-    /* Grey background */
-    outline           : none;
-    /* Remove outline */
-    opacity           : 0.7;
-    /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s;
-    /* 0.2 seconds transition on hover */
-    transition        : opacity .2s;
+.range__result {
+    font-family   : "Segoe UI";
+    font-weight   : normal;
+    font-size     : 16px;
+    letter-spacing: -0.01em;
+    text-align    : center;
+    color         : #0078d4;
+
 }
 
-/* Mouse-over effects */
-.slider:hover {
-    opacity: 1;
-    /* Fully shown on mouse-over */
+.r_slider {
+    & .irs-line {
+        top             : 15px;
+        border          : 0;
+        height          : 15px;
+        background-color: #FFFFFF;
+        border-radius   : 10px;
+        box-shadow      : inset 0 3px 6px rgba($color: #000000, $alpha: .10);
+
+    }
+
+    & .irs-bar {
+        top             : 15px;
+        box-shadow      : inset 0 3px 6px rgba($color: #000000, $alpha: .10);
+        height          : 15px;
+        background-color: #FFB900;
+        border-radius   : 5px;
+    }
+
+    & .irs-handle {
+        top          : 12px;
+        width        : 12px;
+        height       : 20px;
+        background   : #767676;
+        border-radius: 3px;
+
+
+        &:hover {
+            box-shadow: 0 3px 6px rgba($color: #767676, $alpha: 0.16);
+
+            & i:first-child {
+                background: transparent !important;
+
+
+            }
+        }
+
+        &>i:first-child {
+            background: transparent;
+            width     : 100%;
+            left      : 4px;
+            position  : relative;
+
+
+        }
+    }
+
+    &+.irs-hidden-input {
+        opacity: 0 !important;
+    }
+
+    &::before {
+        content       : '';
+        display       : block;
+        position      : absolute;
+        top           : 15px;
+        width         : 100%;
+        height        : 15px;
+        border-radius : 5px;
+        background    : transparent;
+        z-index       : 1;
+        pointer-events: none;
+        border        : 1px solid #D0D0D0;
+    }
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    /* Override default look */
-    appearance        : none;
-    width             : 25px;
-    /* Set a specific slider handle width */
-    height            : 25px;
-    /* Slider handle height */
-    background        : #04AA6D;
-    /* Green background */
-    cursor            : pointer;
-    /* Cursor on hover */
-}
+.nav__links {
+    padding-top: 80px;
+    padding-bottom: 60px;
 
-.slider::-moz-range-thumb {
-    width     : 25px;
-    /* Set a specific slider handle width */
-    height    : 25px;
-    /* Slider handle height */
-    background: #04AA6D;
-    /* Green background */
-    cursor    : pointer;
-    /* Cursor on hover */
+    & a {
+        font-family    : "Segoe UI";
+        font-weight    : 600;
+        text-decoration: underline;
+        font-size      : 20px;
+        letter-spacing : -0.01em;
+        line-height    : 22px;
+        color          : #0078d4;
+        margin-right   : 40px;
+        &:hover{
+            color: darken($color: #0078d4, $amount: 10);
+        }
+
+    }
 }

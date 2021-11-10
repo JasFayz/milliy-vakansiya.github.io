@@ -2085,10 +2085,10 @@ body {
 .useful-links__item .content .name {
   font-size: 15px;
   letter-spacing: -0.02em;
-  line-height: 15px;
+  line-height: 1.3;
   color: #666;
   margin-bottom: 10px;
-  height: 31px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -3033,6 +3033,7 @@ body {
 
 .resume__make .form-fields .control-label {
   text-align: left;
+  padding-left: 0;
   padding-top: 12px;
   font-weight: 600;
   font-size: 18px;
@@ -3108,6 +3109,7 @@ body {
 
 .resume__make .form-fields .radio {
   margin-bottom: 20px;
+  margin-right: 15px;
 }
 
 .resume__make .form-fields .radio input:checked + label::after {
@@ -3126,6 +3128,112 @@ body {
 
 .resume__make .form-fields .radio label::after {
   background-color: #0778D4;
+}
+
+.resume__make .form-fields .radio-square:last-child {
+  margin-right: 0;
+}
+
+.resume__make .form-fields .radio-square input:checked + label {
+  background: #EAEAEA;
+  color: #0078D4;
+  border: 1px solid #0078D4;
+}
+
+.resume__make .form-fields .radio-square input:checked + label::after {
+  content: none;
+}
+
+.resume__make .form-fields .radio-square label {
+  padding-left: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 5px;
+  border: 1px solid #D0D0D0;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.resume__make .form-fields .radio-square label::before {
+  content: none;
+}
+
+.resume__make .form-fields .radio-square label::after {
+  content: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0078D4;
+  border-radius: 5px;
+  background: transparent;
+  left: 0;
+}
+
+.resume__make .form-fields .checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.resume__make .form-fields .checkbox input:checked + label:after {
+  content: '';
+  height: 15px;
+  width: 5px;
+}
+
+.resume__make .form-fields .checkbox label {
+  padding-left: 40px;
+  position: relative;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: #212121;
+}
+
+.resume__make .form-fields .checkbox label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 2px solid #107C10;
+}
+
+.resume__make .form-fields .checkbox label::after {
+  content: none;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom: 2px solid #107C10;
+  border-right: 2px solid #107C10;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.resume__make .form-fields .btn-del-lang {
+  border-radius: 0;
+  background: none;
+  position: absolute;
+  top: 3px;
+  left: calc(100% - 10px);
+}
+
+.resume__make .form-fields .btn-del-lang:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .resume__make .form-fields .input-adon {
@@ -3159,63 +3267,118 @@ body {
   color: #666;
 }
 
-.slidecontainer {
+.range__slider {
   width: 100%;
-  /* Width of the outside container */
+  padding-top: 20px;
 }
 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;
-  /* Override default CSS styles */
-  -moz-appearance: none;
-       appearance: none;
+.range__slider label {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 22px;
+  text-align: left;
+  color: #767676;
+}
+
+.range__slider-wrapper {
+  display: table-cell;
   width: 100%;
-  /* Full-width */
-  height: 25px;
-  /* Specified height */
-  background: #d3d3d3;
-  /* Grey background */
-  outline: none;
-  /* Remove outline */
-  opacity: 0.7;
-  /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s;
-  /* 0.2 seconds transition on hover */
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+  vertical-align: middle;
+  padding-left: 8px;
 }
 
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1;
-  /* Fully shown on mouse-over */
+.range__result {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0078d4;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Override default look */
-  appearance: none;
-  width: 25px;
-  /* Set a specific slider handle width */
-  height: 25px;
-  /* Slider handle height */
-  background: #04AA6D;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
+.r_slider .irs-line {
+  top: 15px;
+  border: 0;
+  height: 15px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  /* Set a specific slider handle width */
-  height: 25px;
-  /* Slider handle height */
-  background: #04AA6D;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
+.r_slider .irs-bar {
+  top: 15px;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  height: 15px;
+  background-color: #FFB900;
+  border-radius: 5px;
+}
+
+.r_slider .irs-handle {
+  top: 12px;
+  width: 12px;
+  height: 20px;
+  background: #767676;
+  border-radius: 3px;
+}
+
+.r_slider .irs-handle:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(118, 118, 118, 0.16);
+          box-shadow: 0 3px 6px rgba(118, 118, 118, 0.16);
+}
+
+.r_slider .irs-handle:hover i:first-child {
+  background: transparent !important;
+}
+
+.r_slider .irs-handle > i:first-child {
+  background: transparent;
+  width: 100%;
+  left: 4px;
+  position: relative;
+}
+
+.r_slider + .irs-hidden-input {
+  opacity: 0 !important;
+}
+
+.r_slider::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: transparent;
+  z-index: 1;
+  pointer-events: none;
+  border: 1px solid #D0D0D0;
+}
+
+.nav__links {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.nav__links a {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  line-height: 22px;
+  color: #0078d4;
+  margin-right: 40px;
+}
+
+.nav__links a:hover {
+  color: #005ba1;
 }
 
 .v-page .v-info {
