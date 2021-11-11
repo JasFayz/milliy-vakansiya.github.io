@@ -358,6 +358,10 @@ body {
   padding-right: 40px;
 }
 
+.header__nav .nav li.mobile_button {
+  padding-right: 0;
+}
+
 .header__nav .nav li.mobile_button button {
   background: transparent;
   border: none;
@@ -620,6 +624,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 29.406 27.422'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M16-29.422,30.7-14.7,29.3-13.3,28-14.578V-2H18V-12H14V-2H4V-14.578L2.7-13.3,1.3-14.7ZM26-4V-16.578l-10-10-10,10V-4h6V-14h8V-4Z' transform='translate(-1.297 29.422)' fill='%230078d4'/%3E%3C/svg%3E%0A");
   background-position: 0 50%;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 .header__bottom .breadcrumb > .active {
@@ -636,12 +641,32 @@ body {
   float: right;
 }
 
+.header__bottom .nav li {
+  margin-right: 15px;
+}
+
+.header__bottom .nav li:last-child {
+  margin-right: 0;
+}
+
 .header__bottom .nav a {
   padding: 3px 15px;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #0078d4;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header__bottom .nav a:hover {
   background: transparent;
+  border-bottom: 2px solid #FFB900;
 }
 
 .header__bottom .nav a svg {
@@ -1501,7 +1526,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: -0.02em;
-  line-height: 21px;
+  line-height: 22px;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -1515,16 +1540,9 @@ body {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: -0.01em;
-  line-height: 21px;
+  line-height: 22px;
   color: #666;
-  padding-right: 40px;
-  display: inline-block;
-}
-
-.vacancies__benefits .content .link .link__arrow {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' viewBox='0 0 32 33'%3E%3Ctext id='Fabric_Icons' data-name='Fabric Icons' transform='translate(0 32)' fill='%232b88d8' font-size='32' font-family='FabricExternalMDL2Assets, Fabric External MDL2 Assets' letter-spacing='1em'%3E%3Ctspan x='0' y='0'%3E%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  width: 16px;
-  height: 16px;
+  padding-right: 30px;
   display: inline-block;
 }
 
@@ -3289,6 +3307,108 @@ body {
   width: 100%;
   vertical-align: middle;
   padding-left: 8px;
+}
+
+.range__rate {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+.range__rate label {
+  display: block;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 22px;
+  color: #767676;
+  font-weight: normal;
+  margin-bottom: 9px;
+}
+
+.range__rate-wrapper {
+  display: block;
+}
+
+.range__rate input {
+  opacity: 0;
+  z-index: -10;
+}
+
+.range__rate .r_completion_rate .irs-line {
+  top: 7px;
+  height: 20px;
+  border-radius: 50px;
+  border: 1px solid #2B88D8;
+  background: transparent;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.range__rate .r_completion_rate .irs-bar {
+  top: 7px;
+  height: 20px;
+  background-color: #107C10;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0078D4;
+}
+
+.range__rate .r_completion_rate .irs-single {
+  z-index: 5;
+  top: 5px;
+  font-size: 18px;
+  background: transparent;
+}
+
+.range__rate .r_completion_rate .irs-single::before {
+  content: none;
+}
+
+.range__rate .r_completion_rate .irs-handle {
+  top: 0px;
+  width: 52px;
+  height: 33px;
+  border-radius: 50px;
+  background: #0078D4;
+}
+
+.range__rate .r_completion_rate .irs-handle > i:first-child {
+  background: transparent;
+}
+
+.btn__print {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #2B88D8;
+  background: #EFF6FC;
+  float: right;
+  margin-right: 20px;
+  margin-top: 18px;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.btn__print:hover {
+  background: #daeaf8;
+}
+
+.btn__delete {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #2B88D8;
+  background: #EFF6FC;
+  float: right;
+  margin-top: 18px;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.btn__delete:hover {
+  background: #daeaf8;
 }
 
 .range__result {

@@ -171,7 +171,7 @@
                     background-image          : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 64 64'%3E%3Cg id='Сгруппировать_10544' data-name='Сгруппировать 10544' transform='translate(-2392 -1452)'%3E%3Crect id='Прямоугольник_13738' data-name='Прямоугольник 13738' width='64' height='64' transform='translate(2392 1452)' fill='none'/%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M5.625-36a12.225,12.225,0,0,1,3.287.439,12.226,12.226,0,0,1,2.953,1.248,12.534,12.534,0,0,1,2.5,1.942,12.534,12.534,0,0,1,1.942,2.5,12.226,12.226,0,0,1,1.248,2.953A12.225,12.225,0,0,1,18-23.625a12.225,12.225,0,0,1-.439,3.287,12.226,12.226,0,0,1-1.248,2.953,12.534,12.534,0,0,1-1.942,2.5,12.534,12.534,0,0,1-2.5,1.942,12.226,12.226,0,0,1-2.953,1.248,12.225,12.225,0,0,1-3.287.439,12.128,12.128,0,0,1-4.21-.738,12.637,12.637,0,0,1-3.7-2.127L-16.084-.334A1.081,1.081,0,0,1-16.875,0a1.081,1.081,0,0,1-.791-.334A1.081,1.081,0,0,1-18-1.125a1.081,1.081,0,0,1,.334-.791l13.781-13.8a12.637,12.637,0,0,1-2.127-3.7,12.128,12.128,0,0,1-.738-4.21,12.225,12.225,0,0,1,.439-3.287,12.226,12.226,0,0,1,1.248-2.953,12.534,12.534,0,0,1,1.942-2.5,12.534,12.534,0,0,1,2.5-1.942,12.226,12.226,0,0,1,2.953-1.248A12.225,12.225,0,0,1,5.625-36Zm0,22.5a9.8,9.8,0,0,0,3.938-.8,10.281,10.281,0,0,0,3.217-2.171,10.281,10.281,0,0,0,2.171-3.217,9.8,9.8,0,0,0,.8-3.937,9.8,9.8,0,0,0-.8-3.937,10.281,10.281,0,0,0-2.171-3.217A10.281,10.281,0,0,0,9.563-32.95a9.8,9.8,0,0,0-3.937-.8,9.8,9.8,0,0,0-3.937.8,10.281,10.281,0,0,0-3.217,2.171A10.281,10.281,0,0,0-3.7-27.562a9.8,9.8,0,0,0-.8,3.938,9.8,9.8,0,0,0,.8,3.938,10.281,10.281,0,0,0,2.171,3.217A10.281,10.281,0,0,0,1.688-14.3,9.8,9.8,0,0,0,5.625-13.5Z' transform='translate(2424 1502)' fill='%23f8f8f8'/%3E%3C/g%3E%3C/svg%3E%0A");
                     background-repeat         : no-repeat;
                     background-position       : 45px 50%;
-                  
+
                     &:focus {
                         border : none;
                         outline: none;
@@ -187,6 +187,7 @@
                 right    : 190px;
                 z-index  : 18;
                 cursor   : pointer;
+
                 & svg {
                     vertical-align: middle;
                 }
@@ -219,7 +220,7 @@
                 font-weight   : bold;
                 font-size     : 16px;
                 letter-spacing: -0.02em;
-                line-height   : 21px;
+                line-height   : 22px;
                 color         : #333;
                 text-transform: uppercase;
                 margin-bottom : 5px;
@@ -233,17 +234,17 @@
                 font-weight   : 600;
                 font-size     : 16px;
                 letter-spacing: -0.01em;
-                line-height   : 21px;
+                line-height   : 22px;
                 color         : #666;
-                padding-right : 40px;
+                padding-right : 30px;
                 display       : inline-block;
 
-                & .link__arrow {
-                    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' viewBox='0 0 32 33'%3E%3Ctext id='Fabric_Icons' data-name='Fabric Icons' transform='translate(0 32)' fill='%232b88d8' font-size='32' font-family='FabricExternalMDL2Assets, Fabric External MDL2 Assets' letter-spacing='1em'%3E%3Ctspan x='0' y='0'%3E%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-                    width           : 16px;
-                    height          : 16px;
-                    display         : inline-block;
-                }
+                // & .link__arrow {
+                //     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' viewBox='0 0 32 33'%3E%3Ctext id='Fabric_Icons' data-name='Fabric Icons' transform='translate(0 32)' fill='%232b88d8' font-size='32' font-family='FabricExternalMDL2Assets, Fabric External MDL2 Assets' letter-spacing='1em'%3E%3Ctspan x='0' y='0'%3E%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+                //     width           : 16px;
+                //     height          : 16px;
+                //     display         : inline-block;
+                // }
             }
 
         }

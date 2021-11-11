@@ -321,6 +321,112 @@
     }
 }
 
+
+.range__rate {
+    display     : block;
+    // max-width: 348px;
+    float       : left;
+    width       : 70%;
+
+    & label {
+        display       : block;
+        font-family   : "Segoe UI";
+        font-size     : 18px;
+        letter-spacing: -0.01em;
+        line-height   : 22px;
+        color         : #767676;
+        font-weight   : normal;
+        margin-bottom : 9px;
+    }
+
+    &-wrapper {
+        display: block;
+    }
+
+    & input {
+        opacity: 0;
+        z-index: -10;
+    }
+
+    & .r_completion_rate {
+        & .irs-line {
+            top          : 7px;
+            height       : 20px;
+            border-radius: 50px;
+            border       : 1px solid #2B88D8;
+            background   : transparent;
+            box-shadow   : inset 0 3px 6px rgba($color: #000000, $alpha: 0.2);
+        }
+
+        & .irs-bar {
+            top             : 7px;
+            height          : 20px;
+            background-color: #107C10;
+            border-radius   : 50px;
+            box-shadow      : inset 0 3px 6px rgba($color: #000000, $alpha: 0.2);
+            border          : 1px solid #0078D4;
+        }
+
+        & .irs-single {
+            z-index   : 5;
+            top       : 5px;
+            font-size : 18px;
+            background: transparent;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        & .irs-handle {
+            top          : 0px;
+            width        : 52px;
+            height       : 33px;
+            border-radius: 50px;
+            background   : #0078D4;
+
+            &>i:first-child {
+                background: transparent;
+            }
+        }
+
+
+    }
+
+
+}
+
+.btn__print {
+    height       : 50px;
+    width        : 50px;
+    border-radius: 50%;
+    border       : 1px solid #2B88D8;
+    background   : #EFF6FC;
+    float        : right;
+    margin-right : 20px;
+    margin-top   : 18px;
+    transition   : all 0.25s linear;
+
+    &:hover {
+        background: darken($color: #EFF6FC, $amount: 5);
+    }
+}
+
+.btn__delete {
+    height       : 50px;
+    width        : 50px;
+    border-radius: 50%;
+    border       : 1px solid #2B88D8;
+    background   : #EFF6FC;
+    float        : right;
+    margin-top   : 18px;
+    transition   : all 0.25s linear;
+
+    &:hover {
+        background: darken($color: #EFF6FC, $amount: 5);
+    }
+}
+
 .range__result {
     font-family   : "Segoe UI";
     font-weight   : normal;
@@ -398,7 +504,7 @@
 }
 
 .nav__links {
-    padding-top: 80px;
+    padding-top   : 80px;
     padding-bottom: 60px;
 
     & a {
@@ -410,7 +516,8 @@
         line-height    : 22px;
         color          : #0078d4;
         margin-right   : 40px;
-        &:hover{
+
+        &:hover {
             color: darken($color: #0078d4, $amount: 10);
         }
 
