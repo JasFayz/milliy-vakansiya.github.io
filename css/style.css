@@ -4176,7 +4176,7 @@ body {
   transition: all 0.3s linear;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .resume-info .block .btn-warning {
