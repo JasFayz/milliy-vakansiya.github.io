@@ -410,6 +410,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   border: 1px solid #C7E0F4;
+  min-width: 245px;
 }
 
 .header__nav .nav .dropdown-menu::before {
@@ -430,7 +431,7 @@ body {
 .header__nav .nav a.dropdown-item {
   padding: 11px 16px;
   font-family: "Segoe UI";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.01em;
   line-height: 18px;
@@ -442,6 +443,8 @@ body {
   background: white;
   position: relative;
   z-index: 2;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .header__nav .nav a.dropdown-item:first-child {
@@ -457,6 +460,7 @@ body {
 .header__nav .nav a.dropdown-item:hover {
   color: #0078D4;
   border-color: transparent;
+  font-weight: 600;
 }
 
 .header__checkbox {
@@ -1504,7 +1508,8 @@ body {
 .vacancies__benefits {
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .vacancies__benefits .benefit__item {
@@ -3988,9 +3993,9 @@ body {
 
 .v-page .card-links .item .text {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: -0.01em;
-  line-height: 15px;
+  line-height: 20px;
   color: #3c3c3c;
   padding: 0 35px;
   display: inline-block;

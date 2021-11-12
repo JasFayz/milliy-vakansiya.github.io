@@ -803,6 +803,7 @@
             padding-top   : 0;
             padding-bottom: 0;
             border        : 1px solid #C7E0F4;
+            min-width     : 245px;
 
             &::before {
                 content      : '';
@@ -822,7 +823,7 @@
         & a.dropdown-item {
             padding        : 11px 16px;
             font-family    : "Segoe UI";
-            font-weight    : 600;
+            font-weight    : 400;
             font-size      : 18px;
             letter-spacing : -0.01em;
             line-height    : 18px;
@@ -834,6 +835,7 @@
             background     : white;
             position       : relative;
             z-index        : 2;
+            transition     : all .4s ease-in-out;
 
             &:first-child {
                 border-top-left-radius : 10px;
@@ -848,6 +850,8 @@
             &:hover {
                 color       : #0078D4;
                 border-color: transparent;
+                font-weight : 600;
+
             }
         }
     }
