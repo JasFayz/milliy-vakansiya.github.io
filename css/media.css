@@ -183,6 +183,12 @@
   .intro .mobile__tab {
     display: block;
   }
+  .temp-job__form .form__card select.form-control {
+    margin-bottom: 32px;
+  }
+  .temp-job__form .form__card .form-control.date {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 776px) {
@@ -554,6 +560,18 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .temp-job__form .form__card .form-group:last-child .btn-back {
+    position: relative;
+    top: 82px;
+  }
+  .temp-job__form .form__card .form-group:last-child .btn-forward {
+    position: relative;
+    top: -62px;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: block;
+    width: 100%;
   }
 }
 
