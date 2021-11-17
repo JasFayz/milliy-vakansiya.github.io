@@ -9,6 +9,8 @@
 .resume-forma .forma {
   background: white;
   padding: 75px 84px 0 84px;
+  -webkit-box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.16);
+          box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.16);
 }
 
 .resume-forma .forma__header {
