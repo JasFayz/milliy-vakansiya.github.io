@@ -613,6 +613,10 @@
             padding-bottom: 0;
         }
 
+        .header__middle.inner .dropdown-menu::before {
+            background-color: #DEECF9;
+        }
+
         .header__middle.inner .dropdown-menu-title {
             padding                : 5px 11px;
             background             : #DEECF9;
@@ -620,6 +624,8 @@
             border-top-right-radius: 10px;
             color                  : #0078D4;
             font-weight            : 600;
+            position               : relative;
+            z-index                : 100;
         }
 
         .header__middle.inner .dropdown-menu .dropdown-item {
@@ -677,6 +683,7 @@
             }
         }
     }
+
     &__select {
         float: left;
 

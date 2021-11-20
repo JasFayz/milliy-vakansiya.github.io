@@ -11,6 +11,9 @@
   .container.bigger {
     width: 1326px;
   }
+  .container.extra-big {
+    width: 1632px;
+  }
 }
 
 @media (min-width: 991px) {

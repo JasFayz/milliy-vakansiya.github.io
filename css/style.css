@@ -224,6 +224,10 @@ body {
   padding-bottom: 0;
 }
 
+.header.inner .header__middle.inner .dropdown-menu::before {
+  background-color: #DEECF9;
+}
+
 .header.inner .header__middle.inner .dropdown-menu-title {
   padding: 5px 11px;
   background: #DEECF9;
@@ -231,6 +235,8 @@ body {
   border-top-right-radius: 10px;
   color: #0078D4;
   font-weight: 600;
+  position: relative;
+  z-index: 100;
 }
 
 .header.inner .header__middle.inner .dropdown-menu .dropdown-item {
@@ -5537,5 +5543,10 @@ body {
 .resume-forma .forma__footer a {
   font-weight: bold;
   color: #a6a6a6;
+}
+
+.active__vacancy .search__column {
+  float: left;
+  width: 230px;
 }
 /*# sourceMappingURL=style.css.map */
