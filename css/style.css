@@ -82,6 +82,7 @@ body {
   letter-spacing: -0.02em;
   line-height: 40px;
   padding: 0;
+  text-align: center;
 }
 
 .pagination li a:hover {
@@ -5548,12 +5549,23 @@ body {
 .active-vacancy {
   padding-top: 40px;
   padding-bottom: 95px;
+  height: 875px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.active-vacancy .pagination {
+  background: white;
+}
+
+.active-vacancy::-webkit-scrollbar {
+  display: none;
 }
 
 .active-vacancy .search__column {
-  float: left;
-  width: 18%;
-  padding: 0 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .active-vacancy .search__column .btn {
@@ -5604,6 +5616,7 @@ body {
 
 .active-vacancy .search__column > .form-group .input-group {
   position: relative;
+  width: 100%;
 }
 
 .active-vacancy .search__column > .form-group.input {
@@ -5636,9 +5649,7 @@ body {
 }
 
 .active-vacancy .vacancy__list {
-  float: left;
-  width: 30%;
-  padding: 0 18px;
+  position: relative;
 }
 
 .active-vacancy .vacancy__list > .title {
@@ -5782,13 +5793,16 @@ body {
   font-weight: bold;
 }
 
-.active-vacancy .vacancy__info {
-  float: right;
-  width: 52%;
+.active-vacancy .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  right: 0;
+}
+
+.active-vacancy .vacancy__info {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .active-vacancy .vacancy__info .wrapper {
