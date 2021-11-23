@@ -1,11 +1,11 @@
 .active-vacancy {
-  padding-top   : 40px;
-  padding-bottom: 95px;
-  height        : 875px;
+  padding-top      : 40px;
+  // padding-bottom: 95px;
+  height           : 825px;
 
   // margin-bottom: 90px;
-  overflow     : hidden;
-  overflow-y   : auto;
+  overflow  : hidden;
+  overflow-y: auto;
 
   & .pagination {
     // position  : absolute;
@@ -304,6 +304,8 @@
     }
   }
 }
+
+
 
 .checkbox-rounded {
   margin-bottom: 15px;

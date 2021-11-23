@@ -63,6 +63,10 @@ body {
   fill: #fff;
 }
 
+.bg-dark {
+  background: #212121 !important;
+}
+
 .pagination-row {
   text-align: center;
 }
@@ -5548,8 +5552,7 @@ body {
 
 .active-vacancy {
   padding-top: 40px;
-  padding-bottom: 95px;
-  height: 875px;
+  height: 825px;
   overflow: hidden;
   overflow-y: auto;
 }
