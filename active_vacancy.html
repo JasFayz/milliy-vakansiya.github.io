@@ -262,9 +262,9 @@
     <div class="content ">
       <div class="active-vacancy v-page">
         <div class="container extra-big">
-          <div class="row">
-            <div class="col-lg-2 sticky">
-              <div class="search__column ">
+          <div class="row" data-full-height="true">
+            <div class="col-lg-2 ">
+              <div class="search__column js-sticky-widget">
                 <button class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 32 24">
                     <path id="Fabric_Icons" data-name="Fabric Icons"
@@ -508,8 +508,8 @@
 
               </div>
             </div>
-            <div class="col-lg-6 sticky">
-              <div class="vacancy__info">
+            <div class="col-lg-6 ">
+              <div class="vacancy__info  js-sticky-widget">
                 <div class="wrapper">
                   <div class="v-info" id="scroll">
                     <div class="v-card position-relative">
@@ -796,7 +796,35 @@
     myDemo.scrollBarHolder.appendChild(psuedo);
 
 
+  </script>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/sticksy/dist/sticksy.min.js"></script>
+  <script>
+    let maxHeight = null;
+    $('div[data-full-height]').children().each(function (index, el) {
+      if (maxHeight < $(el).height()) {
+        maxHeight = $(el).height()
+      }
+
+    }).each(function (index, el) {
+      $(el).css({
+        height: maxHeight
+      })
+    })
+
+    var stickyElement = new Sticksy.initializeAll('.js-sticky-widget', {
+      listen: true,
+      topSpacing: 60,
+    });
+
+    // stickyEl.onStateChanged = function (state) {
+    //   if (state === 'fixed') {
+    //     stickyEl.nodeRef.classList.add('widget--sticky')
+    //   } else {
+    //     stickyEl.nodeRef.classList.remove('widget--sticky')
+    //   }
+    // }
   </script>
 </body>
 

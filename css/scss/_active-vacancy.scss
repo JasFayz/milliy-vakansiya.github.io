@@ -1,11 +1,11 @@
 .active-vacancy {
-  padding-top      : 40px;
+  padding-top         : 40px;
   // padding-bottom: 95px;
-  height           : 825px;
+  // height           : 825px;
 
-  // margin-bottom: 90px;
-  overflow  : hidden;
-  overflow-y: auto;
+  // // margin-bottom: 90px;
+  // overflow  : hidden;
+  // overflow-y: auto;
 
   & .pagination {
     // position  : absolute;
@@ -379,4 +379,11 @@
 #scroll {
   height  : 698px;
   overflow: hidden;
+}
+
+.fixed {
+  position : fixed;
+  top      : 0;
+  max-width: 360px;
+  /* theme specific */
 }

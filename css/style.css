@@ -5552,9 +5552,6 @@ body {
 
 .active-vacancy {
   padding-top: 40px;
-  height: 825px;
-  overflow: hidden;
-  overflow-y: auto;
 }
 
 .active-vacancy .pagination {
@@ -5914,5 +5911,195 @@ body {
 #scroll {
   height: 698px;
   overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  max-width: 360px;
+  /* theme specific */
+}
+
+.interesting-vacancy {
+  padding-top: 40px;
+}
+
+.interesting-vacancy .pagination {
+  background: white;
+}
+
+.interesting-vacancy::-webkit-scrollbar {
+  display: none;
+}
+
+.interesting-vacancy .search__column {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.interesting-vacancy .search__column .btn {
+  border-radius: 50px;
+  background-color: #0078d4;
+  display: block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 0;
+  width: 100%;
+  color: white;
+  padding-left: 25px;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #f8f8f8;
+  margin-bottom: 35px;
+}
+
+.interesting-vacancy .search__column .btn span {
+  white-space: pre-wrap;
+}
+
+.interesting-vacancy .search__column .btn svg {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.interesting-vacancy .search__column::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.interesting-vacancy .search__column > .form-group > label {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 19px;
+  color: #3c3c3c;
+  margin-bottom: 14px;
+}
+
+.interesting-vacancy .search__column > .form-group .input-group {
+  position: relative;
+  width: 100%;
+}
+
+.interesting-vacancy .search__column > .form-group.input {
+  margin-bottom: 35px;
+}
+
+.interesting-vacancy .search__column > .form-group .form-control {
+  height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding-right: 40px;
+}
+
+.interesting-vacancy .search__column > .form-group .search__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 10;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.interesting-vacancy .title {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  line-height: 42px;
+  color: #333;
+  margin: 0;
+}
+
+.interesting-vacancy .table {
+  margin-top: 19px;
+}
+
+.interesting-vacancy .table th {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  line-height: 21px;
+  color: #a6a6a6;
+  padding: 12px 39px;
+  border-top: none;
+}
+
+.interesting-vacancy .table th:first-child {
+  padding-left: 0;
+}
+
+.interesting-vacancy .table td {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #333;
+  padding: 30px 39px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(166, 166, 166, 0.38);
+}
+
+.interesting-vacancy .table td:first-child {
+  padding-left: 0;
+}
+
+.interesting-vacancy .date_view {
+  display: inline-block;
+}
+
+.interesting-vacancy .date_view::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.interesting-vacancy .date {
+  float: left;
+  margin-right: 20px;
+  padding-left: 20px;
+  background: url("./../image/icon_calendar.svg") no-repeat 0 50%/14px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.interesting-vacancy .view-count {
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: url("./../image/icon_view.svg") no-repeat 0 50%/14px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.block__vacancy .date_view {
+  margin-bottom: 30px;
+}
+
+.block__vacancy .block .outline-card {
+  padding: 30px;
+}
+
+.block__vacancy .__title {
+  padding-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
