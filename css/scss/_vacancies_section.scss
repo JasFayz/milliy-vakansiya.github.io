@@ -56,27 +56,37 @@
             padding      : 40px 40px 8px 40px;
             background   : white;
             border-radius: 30px;
+            margin-bottom: 60px;
+
+            & .row-no-gutters [class*=col-] {
+                padding-left : 0;
+                padding-right: 0;
+            }
 
             & .row-no-gutters {
                 width: calc(100% + 32px);
             }
 
             & .card {
-                padding        : 20px 10px 25px 10px;
-                text-align     : center;
-                display        : block;
-                text-decoration: none;
-                margin-bottom  : 32px;
-                transition     : all 0.3s linear;
-                margin-right   : 32px;
-                position       : relative;
-                border-radius  : 20px;
+                padding           : 28px 10px 24px 10px;
+                text-align        : center;
+                display           : block;
+                text-decoration   : none;
+                margin-bottom     : 32px;
+                transition        : all 0.3s linear;
+                // margin-right   : 32px;
+                position          : relative;
+                border-radius     : 20px;
+                background        : #EFF6FC 0% 0% no-repeat padding-box;
+                box-shadow        : 0px 6px 9px #00000029;
+                border            : 1px solid #00000000;
+
 
                 &:hover {
                     box-shadow: 0 15px 15px rgba($color: #000000, $alpha: 0.2);
 
                     & .name {
-                        color: #F8F8F8;
+                        color: #3C3C3C;
                     }
                 }
 
@@ -95,7 +105,7 @@
                 & .icon {
                     height       : 60px;
                     overflow     : hidden;
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                 }
 
                 & .name {
@@ -104,25 +114,25 @@
                     letter-spacing: -0.01em;
                     line-height   : 25px;
                     text-align    : center;
-                    color         : #F8F8F8;
+                    color         : #3C3C3C;
                     height        : 49px;
                     overflow      : hidden;
-
+                    text-transform: uppercase;
                 }
             }
         }
 
         .search__form {
-            margin-bottom: 40px;
-            padding      : 20px;
-            border-radius: 11px;
-            background   : #C7E0F4;
-            box-shadow   : 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+            margin-bottom   : 40px;
+            padding         : 0;
+            border-radius   : 11px;
+            // background   : #C7E0F4;
+            // box-shadow   : 0 3px 6px rgba($color: #000000, $alpha: 0.16);
 
             & .input-group {
                 display      : block;
-                border-radius: 11px;
-                box-shadow   : inset 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+                border-radius: 20px;
+                box-shadow   : inset 0px 3px 6px #00000029;
                 position     : relative;
                 overflow     : hidden;
 
@@ -134,22 +144,22 @@
             }
 
             & .input__field {
-                height  : 48px;
+                height  : 60px;
                 position: relative;
 
                 & .form-control {
                     height       : 100%;
-                    border-radius: 11px;
-                    border       : 1px solid #71AFE5;
+                    border-radius: 20px;
+                    border       : 1px solid #1C7EE5;
                     background   : white;
-                    box-shadow   : inset 0 3px 8px rgba($color: #000000, $alpha: 0.3);
+                    box-shadow   : inset 0px 3px 6px #00000029;
                     padding      : 13px 20px;
                     padding-right: 220px;
                 }
             }
 
             & .input__btn {
-                height     : 50px;
+                height     : 60px;
                 // width   : 15%;
                 position   : absolute;
                 top        : 0;
@@ -164,7 +174,7 @@
                     height                    : 100%;
                     border-top-right-radius   : 11px;
                     border-bottom-right-radius: 11px;
-                    box-shadow                : inset 0 3px 8px rgba($color: #000000, $alpha: 0.3);
+                    box-shadow                : inset 0px 3px 6px #00000029;
                     border                    : none;
                     padding-left              : 80px;
                     padding-right             : 46px;
@@ -197,10 +207,11 @@
     }
 
     &__benefits {
-        padding-left : 40px;
-        padding-right: 40px;
+        padding-left    : 40px;
+        padding-right   : 40px;
         // margin-bottom: 60px;
-        padding-top  : 60px;
+
+        padding-top   : 60px;
         padding-bottom: 60px;
 
         & .benefit__item {
@@ -256,7 +267,7 @@
     &__latest {
         padding      : 40px;
         background   : white;
-        box-shadow   : 0 3px 99px rgba($color: #000000, $alpha: 0.1);
+        box-shadow   : 0px 3px 6px #00000029;
         border-radius: 30px;
 
         & .section__title {

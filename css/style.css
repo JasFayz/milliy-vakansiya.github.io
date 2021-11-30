@@ -1407,6 +1407,12 @@ body {
   padding: 40px 40px 8px 40px;
   background: white;
   border-radius: 30px;
+  margin-bottom: 60px;
+}
+
+.vacancies__tab .tab-content .row-no-gutters [class*=col-] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .vacancies__tab .tab-content .row-no-gutters {
@@ -1414,16 +1420,19 @@ body {
 }
 
 .vacancies__tab .tab-content .card {
-  padding: 20px 10px 25px 10px;
+  padding: 28px 10px 24px 10px;
   text-align: center;
   display: block;
   text-decoration: none;
   margin-bottom: 32px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  margin-right: 32px;
   position: relative;
   border-radius: 20px;
+  background: #EFF6FC 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 6px 9px #00000029;
+          box-shadow: 0px 6px 9px #00000029;
+  border: 1px solid #00000000;
 }
 
 .vacancies__tab .tab-content .card:hover {
@@ -1432,7 +1441,7 @@ body {
 }
 
 .vacancies__tab .tab-content .card:hover .name {
-  color: #F8F8F8;
+  color: #3C3C3C;
 }
 
 .vacancies__tab .tab-content .card .info {
@@ -1449,7 +1458,7 @@ body {
 .vacancies__tab .tab-content .card .icon {
   height: 60px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .vacancies__tab .tab-content .card .name {
@@ -1458,25 +1467,23 @@ body {
   letter-spacing: -0.01em;
   line-height: 25px;
   text-align: center;
-  color: #F8F8F8;
+  color: #3C3C3C;
   height: 49px;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .vacancies__tab .search__form {
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 0;
   border-radius: 11px;
-  background: #C7E0F4;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .vacancies__tab .search__form .input-group {
   display: block;
-  border-radius: 11px;
-  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0px 3px 6px #00000029;
+          box-shadow: inset 0px 3px 6px #00000029;
   position: relative;
   overflow: hidden;
 }
@@ -1488,23 +1495,23 @@ body {
 }
 
 .vacancies__tab .search__form .input__field {
-  height: 48px;
+  height: 60px;
   position: relative;
 }
 
 .vacancies__tab .search__form .input__field .form-control {
   height: 100%;
-  border-radius: 11px;
-  border: 1px solid #71AFE5;
+  border-radius: 20px;
+  border: 1px solid #1C7EE5;
   background: white;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 3px 6px #00000029;
+          box-shadow: inset 0px 3px 6px #00000029;
   padding: 13px 20px;
   padding-right: 220px;
 }
 
 .vacancies__tab .search__form .input__btn {
-  height: 50px;
+  height: 60px;
   position: absolute;
   top: 0;
   right: 0;
@@ -1519,8 +1526,8 @@ body {
   height: 100%;
   border-top-right-radius: 11px;
   border-bottom-right-radius: 11px;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 3px 6px #00000029;
+          box-shadow: inset 0px 3px 6px #00000029;
   border: none;
   padding-left: 80px;
   padding-right: 46px;
@@ -1597,8 +1604,8 @@ body {
 .vacancies__latest {
   padding: 40px;
   background: white;
-  -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
   border-radius: 30px;
 }
 
@@ -1951,6 +1958,132 @@ body {
   background: no-repeat;
 }
 
+.tips-n {
+  background: #EFF6FC;
+  padding-bottom: 60px;
+}
+
+.tips-n .card {
+  background: white;
+  border-radius: 30px;
+  padding: 50px 40px 40px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.tips-n .section__title {
+  margin-bottom: 50px;
+}
+
+.tips-n .tips-card {
+  display: block;
+  padding: 33px 37px 30px 37px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 9px #00000029;
+          box-shadow: 0px 6px 9px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin-bottom: 32px;
+}
+
+.tips-n .tips-card .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #EFF6FC;
+  -webkit-box-shadow: 0px 6px 9px #00000029;
+          box-shadow: 0px 6px 9px #00000029;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.tips-n .tips-card .icon::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#0078D4), to(#0094CB)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #0078D4 0%, #0094CB 100%) 0% 0% no-repeat padding-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.tips-n .tips-card .icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.tips-n .tips-card .icon svg path {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.tips-n .tips-card .text {
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  color: #212121;
+  text-transform: uppercase;
+  text-align: center;
+  height: 46px;
+  overflow: hidden;
+}
+
+.tips-n .tips-card:hover {
+  background: #EFF6FC;
+}
+
+.tips-n .tips-card:hover .icon::before {
+  width: 100%;
+  height: 100%;
+}
+
+.tips-n .tips-card:hover .icon svg path {
+  fill: white;
+}
+
+.tips-n .more_link {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #333;
+  position: relative;
+  padding: 6px 20px 6px 46px;
+  display: inline-block;
+}
+
+.tips-n .more_link::before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #0078D4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.906' height='29.406' viewBox='0 0 31.906 29.406'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M31.906-16,17.2-1.3,15.8-2.7,28.094-15H0v-2H28.094L15.8-29.3,17.2-30.7Z' transform='translate(0 30.703)' fill='%23eff6fc'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
 .employers__section {
   padding-bottom: 90px;
   background: #EFF6FC;
@@ -1958,10 +2091,10 @@ body {
 
 .employers__card {
   background: white;
-  -webkit-box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 99px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
   padding: 40px;
-  margin-top: 90px;
+  margin-bottom: 60px;
   border-radius: 30px;
 }
 

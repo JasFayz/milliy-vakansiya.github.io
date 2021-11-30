@@ -6,7 +6,7 @@
 
 @media (min-width: 1400px) {
     .container {
-        width: 1246px;
+        width: 1296px;
 
         &.bigger {
             width: 1326px;
@@ -437,9 +437,9 @@
         display: none;
     }
 
-    .vacancies__tab .tab-content {
-        background: #DEECF9;
-    }
+    // .vacancies__tab .tab-content {
+    //     background: transparent;
+    // }
 
     .intro {
         padding-top   : 104px;
@@ -731,7 +731,8 @@
     }
 
     .vacancies__tab .tab-content {
-        padding: 40px 0;
+        border-radius: 0;
+        padding      : 40px 0;
     }
 
     .employers__card .employers__item {
@@ -739,7 +740,8 @@
     }
 
     .vacancies__latest {
-        padding: 15px 11px 30px 11px;
+        border-radius: 0;
+        padding      : 15px 11px 30px 11px;
     }
 
     .employers__card {

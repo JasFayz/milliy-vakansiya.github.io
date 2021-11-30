@@ -115,7 +115,7 @@ $(document).ready(function () {
     if ($(document).width() < 991) {
         $('.vacancy__list .row').addClass('owl-carousel owl-theme');
         $('.employer__list .row').addClass('owl-carousel owl-theme');
-        $('#vacancies__tab-slider').addClass('owl-carousel');
+        $('#vacancies__tab-slider').addClass('owl-carousel row-no-gutters');
         $('.btn-group-slider').addClass('owl-carousel owl-theme')
 
 
@@ -171,7 +171,7 @@ $(document).ready(function () {
         $('#vacancies__tab-slider').owlCarousel({
             items: 1,
             loop: true,
-            margin: 10,
+            margin: 20,
             autoWidth: true,
             center: true,
             dots: false,
