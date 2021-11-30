@@ -2042,6 +2042,7 @@ body {
   text-align: center;
   height: 46px;
   overflow: hidden;
+  padding: 0 18px;
 }
 
 .tips-n .tips-card:hover {
