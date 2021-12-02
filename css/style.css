@@ -1046,6 +1046,7 @@ body {
 .intro .statistic .item .info .number {
   font-size: 37px;
   font-weight: 600;
+  text-align: left;
 }
 
 .intro .statistic__logo {
