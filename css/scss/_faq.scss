@@ -1,0 +1,94 @@
+.faq {
+    & .section__title {
+        margin-bottom: 47px;
+    }
+
+    & .card {
+        padding      : 48px 40px 77px 40px;
+        background   : white;
+        border-radius: 30px;
+        box-shadow   : 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+        margin-bottom: 48px;
+        position     : relative;
+    }
+
+    & .small__card {
+        padding        : 30px 38px 28px 38px;
+        background     : #F8F8F8;
+        display        : block;
+        border-radius  : 20px;
+        box-shadow     : 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+        text-decoration: none;
+        transition     : all 0.3s linear;
+        margin-bottom  : 30px;
+
+        &:hover {
+            background: #EFF6FC;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            clear  : both;
+        }
+
+        & .icon {
+            padding-right: 20px;
+            display      : table-cell;
+            height       : 82px;
+        }
+
+        & .text {
+            display       : table-cell;
+            vertical-align: middle;
+            font-family   : "Segoe UI";
+            font-weight   : 600;
+            font-size     : 20px;
+            letter-spacing: -0.01em;
+            color         : #333;
+            white-space   : pre-line;
+            text-transform: uppercase;
+            height        : 82px;
+            overflow      : hidden;
+        }
+    }
+
+    & .center__svg {
+        padding-top   : 90px;
+        padding-bottom: 54px;
+        padding-left  : 54px;
+        padding-right : 54px;
+        text-align    : center;
+    }
+
+    & .more__link {
+        font-family   : "Segoe UI";
+        font-weight   : 600;
+        font-size     : 18px;
+        letter-spacing: -0.01em;
+        line-height   : 10px;
+        color         : #333;
+        padding-left  : 46px;
+        position      : absolute;
+        left          : 50%;
+        bottom        : 105px;
+        padding-top   : 5px;
+        padding-bottom: 5px;
+        display       : inline-block;
+        transform     : translateX(-50%);
+
+        &::before {
+            content      : '';
+            display      : block;
+            position     : absolute;
+            top          : 50%;
+            transform    : translateY(-50%);
+            left         : 0;
+            width        : 36px;
+            height       : 36px;
+            border-radius: 50%;
+            background   : #0078D4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 31.906 29.406'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M31.906-16,17.2-1.3,15.8-2.7,28.094-15H0v-2H28.094L15.8-29.3,17.2-30.7Z' transform='translate(0 30.703)' fill='%23eff6fc'/%3E%3C/svg%3E%0A")no-repeat 50%;
+
+        }
+    }
+}

@@ -21,7 +21,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   letter-spacing: -0.01em;
-  line-height: 17px;
   color: #333;
   text-transform: uppercase;
   text-align: center;
@@ -725,7 +724,7 @@ body {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #2B88D8;
   z-index: 25;
   -webkit-transition: all 0.5s linear;
@@ -790,8 +789,8 @@ body {
 }
 
 .mobile__nav-body {
-  padding-left: 126px;
-  padding-right: 126px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 0 auto;
 }
 
@@ -1021,10 +1020,6 @@ body {
   padding-bottom: 132px;
 }
 
-.intro .statistic .item {
-  padding: 22px 58px 22px 37px;
-}
-
 .intro .statistic .item .icon {
   display: table-cell;
   vertical-align: middle;
@@ -1101,7 +1096,7 @@ body {
 }
 
 .intro .statistic .swipe__btn {
-  margin-top: 65px;
+  margin-top: 45px;
   display: none;
   background: transparent;
   border: 0;
@@ -5490,6 +5485,7 @@ body {
   position: relative;
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .resume-forma.my-resume .forma__header .back__link::before {
@@ -6433,5 +6429,102 @@ body {
 
 .interesting-vacancy .list__vacancies__item .date_view {
   margin-top: 15px;
+}
+
+.faq .section__title {
+  margin-bottom: 47px;
+}
+
+.faq .card {
+  padding: 48px 40px 77px 40px;
+  background: white;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.faq .small__card {
+  padding: 30px 38px 28px 38px;
+  background: #F8F8F8;
+  display: block;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin-bottom: 30px;
+}
+
+.faq .small__card:hover {
+  background: #EFF6FC;
+}
+
+.faq .small__card::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.faq .small__card .icon {
+  padding-right: 20px;
+  display: table-cell;
+  height: 82px;
+}
+
+.faq .small__card .text {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: #333;
+  white-space: pre-line;
+  text-transform: uppercase;
+  height: 82px;
+  overflow: hidden;
+}
+
+.faq .center__svg {
+  padding-top: 90px;
+  padding-bottom: 54px;
+  padding-left: 54px;
+  padding-right: 54px;
+  text-align: center;
+}
+
+.faq .more__link {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 10px;
+  color: #333;
+  padding-left: 46px;
+  position: absolute;
+  left: 50%;
+  bottom: 105px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.faq .more__link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0078D4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 31.906 29.406'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M31.906-16,17.2-1.3,15.8-2.7,28.094-15H0v-2H28.094L15.8-29.3,17.2-30.7Z' transform='translate(0 30.703)' fill='%23eff6fc'/%3E%3C/svg%3E%0A") no-repeat 50%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,6 +25,9 @@
         display: none !important;
     }
 
+    .ten-columns>.col-md-2 {
+        width: 20%;
+    }
 
 
 }
@@ -240,6 +243,11 @@
 
     .temp-job__form .form__card .form-control.date {
         margin-bottom: 32px;
+    }
+
+
+    .faq .more__link {
+        bottom: 50px;
     }
 }
 
@@ -718,6 +726,16 @@
         width        : 100%;
     }
 
+    .vacancies__tab .tab-content,
+    .vacancies__latest {
+        border-radius: 0;
+        margin-bottom: 32px;
+    }
+
+    .vacancies__latest .vacancy__info {
+        margin-right: 0;
+        width       : 387px !important;
+    }
 
 }
 
@@ -742,6 +760,7 @@
     .vacancies__latest {
         border-radius: 0;
         padding      : 15px 11px 30px 11px;
+        margin-bottom: 32px;
     }
 
     .employers__card {
@@ -817,7 +836,7 @@
     }
 
     .intro .statistic.hiden {
-        top: -100%;
+        transform: translateY(-200%);
     }
 
     .intro .statistic .item {
@@ -832,7 +851,7 @@
 
     .intro .statistic__logo {
         display: block;
-        margin : 65px auto 64px auto;
+        margin : 0 auto;
     }
 
     .intro .statistic .swipe__btn {

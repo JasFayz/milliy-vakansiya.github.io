@@ -20,7 +20,7 @@ body {
     font-weight   : bold;
     font-size     : 24px;
     letter-spacing: -0.01em;
-    line-height   : 17px;
+    // line-height   : 17px;
     color         : #333;
     text-transform: uppercase;
     text-align    : center;
@@ -40,9 +40,9 @@ body {
 
 }
 
-.btn-primary {
+// .btn-primary {
     // background: #0778D4 !important;
-}
+// }
 
 .btn-warning {
     background  : #FFB900 !important;
@@ -182,7 +182,6 @@ body {
 }
 
 
-
 @import './header';
 @import './intro';
 @import './vacancies_section';
@@ -201,3 +200,4 @@ body {
 @import './active-vacancy';
 @import './interesting-vacancy';
 @import './favorite';
+@import './faq';
