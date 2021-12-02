@@ -4,10 +4,138 @@
     background    : #EFF6FC;
     min-width     : 100vh;
 
+    &.my-resume {
+        background : white;
+        padding-top: 0;
+
+
+        & .forma {
+            box-shadow: none;
+            padding   : 0;
+
+            &__header {
+                padding-top   : 40px;
+                padding-bottom: 33px;
+                border-bottom : none;
+
+                & .back__link {
+                    font-family   : "Segoe UI";
+                    font-weight   : 600;
+                    font-size     : 16px;
+                    letter-spacing: -0.01em;
+                    line-height   : 10px;
+                    color         : #333;
+                    padding-left  : 46px;
+                    position      : relative;
+                    display       : inline-block;
+                    margin-top    : 20px;
+
+                    &::before {
+                        content      : '';
+                        display      : block;
+                        width        : 36px;
+                        height       : 36px;
+                        border-radius: 50%;
+                        position     : absolute;
+                        top          : 50%;
+                        left         : 0;
+                        background   : #0078D4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 31.906 29.406'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M31.906-15,17.2-29.7,15.8-28.3,28.094-16H0v2H28.094L15.8-1.7,17.2-.3Z' transform='translate(31.906 -0.297) rotate(180)' fill='%23f8f8f8'/%3E%3C/svg%3E%0A")no-repeat 50%;
+                        transform    : translateY(-50%);
+                    }
+                }
+
+                & .action {
+                    float: right;
+                }
+
+                & .btn {
+                    border-radius: 25px;
+                    border       : 1px solid #0078D4;
+                    background   : white;
+                    padding      : 12px 21px 14px 21px;
+                    height       : 50px;
+                    margin-right : 20px;
+                    margin-bottom: 20px;
+
+                    transition: all 0.3s linear;
+
+
+
+                    &:hover {
+                        background: #066abb;
+                        color     : white;
+
+                        & svg path {
+                            fill: white;
+                        }
+                    }
+
+                    &.rounded {
+                        width        : 50px;
+                        height       : 50px;
+                        border-radius: 50%;
+                        position     : relative;
+                        background   : #EFF6FC;
+
+                        &:hover {
+                            background: #066abb;
+                            color     : white;
+
+                            & svg path {
+                                fill: white;
+                            }
+                        }
+
+                        & svg {
+                            float       : none;
+                            position    : absolute;
+                            top         : 50%;
+                            left        : 50%;
+                            transform   : translate(-50%, -50%);
+                            margin-right: 0;
+                            transition  : all 0.3s linear;
+                        }
+                    }
+
+                    & svg {
+                        float       : left;
+                        margin-right: 10px;
+                    }
+
+                    & span {
+                        float: right;
+                    }
+                }
+            }
+
+            &__body {
+                & .btn__edit {
+                    background         : transparent;
+                    border             : none;
+                    font-family        : "Segoe UI";
+                    font-weight        : normal;
+                    font-size          : 18px;
+                    letter-spacing     : -0.01em;
+                    color              : #0078d4;
+                    float              : right;
+                    padding-left       : 23px;
+                    background-image   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 31.998 32'%3E%3Cpath id='Fabric_Icons' data-name='Fabric Icons' d='M0-26.766a5.3,5.3,0,0,0,.391,2,5.113,5.113,0,0,0,1.141,1.719L22.11-2.469,32,0,29.531-9.891,8.955-30.469a5.113,5.113,0,0,0-1.719-1.141,5.3,5.3,0,0,0-2-.391,5.042,5.042,0,0,0-2.031.414,5.334,5.334,0,0,0-1.664,1.125A5.334,5.334,0,0,0,.416-28.8,5.043,5.043,0,0,0,0-26.766Zm26.9,17.078a7.133,7.133,0,0,0-2.851,1.742,7.134,7.134,0,0,0-1.742,2.852L5.423-22,10-26.578ZM29.25-2.75,24.11-4.031a5.033,5.033,0,0,1,.508-1.359,5.014,5.014,0,0,1,.852-1.141,5.014,5.014,0,0,1,1.141-.852,5.032,5.032,0,0,1,1.359-.508ZM4-23.422q-.391-.391-.75-.734a5.566,5.566,0,0,1-.641-.727,3.345,3.345,0,0,1-.445-.828A3,3,0,0,1,2-26.75a3.088,3.088,0,0,1,.258-1.258,3.356,3.356,0,0,1,.7-1.031,3.356,3.356,0,0,1,1.031-.7A3.088,3.088,0,0,1,5.252-30a3,3,0,0,1,1.039.164,3.345,3.345,0,0,1,.828.445,5.566,5.566,0,0,1,.727.641q.344.359.734.75Z' transform='translate(-0.002 32)' fill='%230078d4'/%3E%3C/svg%3E%0A");
+                    background-repeat  : no-repeat;
+                    background-position: 0 50%;
+                    transition         : all 0.3s linear;
+
+                    &:hover {
+                        color: #005ba1;
+                    }
+                }
+            }
+        }
+    }
+
     & .forma {
         background: white;
         padding   : 75px 84px 0 84px;
-        box-shadow: 15px 15px 25px rgba($color: #000000, $alpha: .16); 
+        box-shadow: 15px 15px 25px rgba($color: #000000, $alpha: .16);
 
         &__header {
             padding-bottom: 36px;

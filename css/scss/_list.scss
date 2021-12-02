@@ -233,7 +233,7 @@
                 padding-right: 16px;
                 background   : url('./../image/icon_arrow-down.svg')no-repeat 100% 50% /16px;
                 padding-left : 0;
-                padding: 0;
+                padding      : 0;
             }
 
             & .total {
@@ -316,13 +316,15 @@
 
 
         &__item {
-            padding      : 20px 20px 17px 21px;
-            border       : 1px solid #FFB900;
-            border-bottom: 0;
+            padding: 20px 20px 17px 21px;
+            border : 1px solid #71AFE5;
+
             position     : relative;
+            border-radius: 20px;
+            margin-bottom: 20px;
 
             &:last-child {
-                border-bottom: 1px solid #FFB900;
+                border-bottom: 1px solid #71AFE5;
 
             }
 
@@ -434,11 +436,30 @@
             }
 
             & .btn-primary {
-                background: #0778D4 !important;
+                background   : #0778D4 !important;
+                border-radius: 25px;
+                margin-right : 15px;
+                margin-bottom: 15px;
             }
 
             & .btn-favorite {
-                padding: 7px 15px;
+                border-radius : 25px;
+                border        : 1px solid #0078D4;
+                padding       : 7px 15px;
+                font-family   : "Segoe UI";
+                font-weight   : normal;
+                font-size     : 14px;
+                letter-spacing: -0.01em;
+                text-align    : center;
+                line-height   : 19px;
+                color         : #0078d4;
+                margin-bottom: 15px;
+
+                & svg {
+                    vertical-align: middle;
+                    margin-right  : 10px;
+                }
+
             }
         }
 

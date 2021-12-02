@@ -1,0 +1,52 @@
+.favorite {
+    padding: 35px 0 203px 0;
+
+    & .section__title {
+        text-align    : left;
+        margin-bottom : 20px;
+        font-weight   : bold;
+        font-size     : 32px;
+        letter-spacing: -0.01em;
+        line-height   : 42px;
+        color         : #333;
+        text-transform: inherit;
+    }
+
+}
+
+.interesting-vacancy {
+    padding: 35px 0 85px 0;
+
+    & .section__title {
+        text-align    : left;
+        margin-bottom : 20px;
+        font-weight   : bold;
+        font-size     : 32px;
+        letter-spacing: -0.01em;
+        line-height   : 42px;
+        color         : #333;
+        text-transform: inherit;
+    }
+
+    & .list__vacancies__item {
+        padding-bottom: 5px;
+
+        & .item-body {
+            &::after {
+                content: '';
+                display: block;
+                clear  : both;
+            }
+        }
+
+        & .organization__logo {
+            position : relative;
+            float    : right;
+            transform: none;
+        }
+
+        & .date_view {
+            margin-top: 15px;
+        }
+    }
+}
