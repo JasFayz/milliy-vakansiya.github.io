@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    if ($(document).width() < 776 ) {
+    if ($(document).width() < 776) {
         $('.mobile_button').click(function () {
             $('.mobile__nav').toggleClass('show')
 
@@ -9,8 +9,12 @@ $(document).ready(function () {
             $('.mobile__nav').removeClass('show')
         })
     }
-
-
+    $('.search__button').click(function () {
+        $(this).parent().addClass('show')
+    })
+    $('.search__button-close').click(function () {
+        $(this).parent().parent().removeClass('show')
+    })
     $('.grouped').click(function (e) {
         var popup = $('.map_popup');
         var regionName = $(e.delegateTarget).attr('data-name');
