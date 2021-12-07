@@ -709,28 +709,28 @@
     border-radius: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #deecf9;
+    background: #EFF6FC;
   }
   .employers__card {
     border-radius: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-bottom: 0;
-    background: #deecf9;
+    background: #EFF6FC;
   }
   .faq .card {
     border-radius: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-bottom: 0;
-    background: #deecf9;
+    background: #EFF6FC;
   }
   .employers__section {
     padding-bottom: 0;
   }
   .vacancies__tab .tab-content,
   .vacancies__latest {
-    background: #deecf9;
+    background: #EFF6FC;
   }
   .intro .statistic .item {
     margin-bottom: 32px;
@@ -771,7 +771,7 @@
   .employers__card:nth-child(2) {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #DEECF9;
+    background: #EFF6FC;
   }
   .employers__card:nth-child(2) .useful-links__item {
     background: white;
