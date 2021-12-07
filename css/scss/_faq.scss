@@ -108,6 +108,7 @@
 
     & .nav {
         margin-bottom: 32px;
+
         &-item {
             margin-bottom: 10px;
             display      : table;
@@ -188,5 +189,12 @@
             letter-spacing: -0.48px;
             color         : #333333;
         }
+    }
+
+    & .desktop-faq {
+        display: none;
+    }
+    & .panel-group {
+        display: block;
     }
 }

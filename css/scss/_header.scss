@@ -559,15 +559,19 @@
     z-index : 10;
 
     & .search {
-        padding     : 10px;
+
         text-align  : center;
         margin-right: 0 !important;
         position    : relative;
 
         &__button {
+            padding   : 10px;
             background: transparent;
             border    : none;
-
+            position  : relative;
+            min-height: 40px;
+            min-width : 40px;
+           
             &-close {
                 background      : url("data:image/svg+xml,%3Csvg id='cancel_black_24dp' xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 58 58'%3E%3Cpath id='Контур_15268' data-name='Контур 15268' d='M0,0H58V58H0Z' fill='none'%3E%3C/path%3E%3Cpath id='Контур_15269' data-name='Контур 15269' d='M26.167,2A24.167,24.167,0,1,0,50.333,26.167,24.145,24.145,0,0,0,26.167,2ZM38.25,34.843,34.843,38.25l-8.676-8.676L17.491,38.25l-3.407-3.408,8.676-8.676-8.676-8.676,3.407-3.407,8.676,8.676,8.676-8.676,3.408,3.407-8.676,8.676Z' transform='translate(2.833 2.833)' fill='%230078d4'%3E%3C/path%3E%3C/svg%3E")no-repeat 0 / 24px;
                 border          : none;
@@ -581,6 +585,10 @@
                 transition      : all 0.3s linear;
                 transition-delay: 0.3s;
                 transform       : translateY(-15px);
+            }
+
+            & svg {
+                vertical-align: middle;
             }
         }
 
@@ -1159,7 +1167,7 @@
             }
 
             &.spec_view {
-                padding     : 10px;
+                // padding     : 10px;
                 text-align  : center;
                 margin-right: 0;
 
@@ -1169,6 +1177,16 @@
 
                 &.icon {
                     position: relative;
+                }
+            }
+
+            &.mobile_button {
+                display: none;
+
+                & button {
+                    padding   : 10px;
+                    background: transparent;
+                    border    : none;
                 }
             }
         }
@@ -1187,6 +1205,8 @@
             border-bottom : 3px solid transparent;
             border-radius : 0;
             transition    : all 0.3s linear;
+            min-height    : 40px;
+            min-width     : 40px;
 
             &:hover {
                 background  : transparent;

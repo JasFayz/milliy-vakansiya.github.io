@@ -19,15 +19,18 @@ body {
 }
 
 .header .search {
-  padding: 10px;
   text-align: center;
   margin-right: 0 !important;
   position: relative;
 }
 
 .header .search__button {
+  padding: 10px;
   background: transparent;
   border: none;
+  position: relative;
+  min-height: 40px;
+  min-width: 40px;
 }
 
 .header .search__button-close {
@@ -46,6 +49,10 @@ body {
           transition-delay: 0.3s;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
+}
+
+.header .search__button svg {
+  vertical-align: middle;
 }
 
 .header .search__form {
@@ -622,7 +629,6 @@ body {
 }
 
 .header__quick-nav .nav li.spec_view {
-  padding: 10px;
   text-align: center;
   margin-right: 0;
 }
@@ -633,6 +639,16 @@ body {
 
 .header__quick-nav .nav li.spec_view.icon {
   position: relative;
+}
+
+.header__quick-nav .nav li.mobile_button {
+  display: none;
+}
+
+.header__quick-nav .nav li.mobile_button button {
+  padding: 10px;
+  background: transparent;
+  border: none;
 }
 
 .header__quick-nav .nav a {
@@ -650,6 +666,8 @@ body {
   border-radius: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  min-height: 40px;
+  min-width: 40px;
 }
 
 .header__quick-nav .nav a:hover {

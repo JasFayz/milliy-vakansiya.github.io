@@ -48,7 +48,11 @@ $(document).ready(function () {
         responsive: {
             600: {
                 items: 6,
-                nav: true,
+                nav: false,
+            },
+            991: {
+                items: 6,
+                nav: true
             }
         }
     });
@@ -90,7 +94,7 @@ $(document).ready(function () {
         dots: false,
         singleItem: true,
         stagePadding: 80,
-        nav: false,
+        nav: true,
         navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn-blue.svg' width='32'></div>", "<div class='next-btn'><img src='./image/icon_next-btn-blue.svg' width='32'></div>"],
         responsive: {
             1200: {
@@ -111,16 +115,18 @@ $(document).ready(function () {
             },
             556: {
                 items: 1,
-                nav: false,
+                nav: true,
             }
         }
     });
 
     if ($(document).width() < 991) {
-        $('.vacancy__list .row').addClass('owl-carousel owl-theme');
-        $('.employer__list .row').addClass('owl-carousel owl-theme');
-        $('#vacancies__tab-slider').addClass('owl-carousel row-no-gutters');
+        // $('.vacancy__list .row').addClass('owl-carousel owl-theme');
+        // $('.employer__list .row').addClass('owl-carousel owl-theme');
+        $('.vacancies__benefits .row').addClass('owl-carousel owl-theme');
+        // $('#vacancies__tab-slider').addClass('owl-carousel row-no-gutters');
         $('.btn-group-slider').addClass('owl-carousel owl-theme')
+        $('#tips__slider').addClass('owl-carousel owl-theme')
 
 
         $('.btn-group-slider').owlCarousel({
@@ -145,43 +151,69 @@ $(document).ready(function () {
             $('.statistic').toggleClass('hiden')
         })
 
-
-
-
-        $('.vacancy__list> .owl-carousel').owlCarousel({
+        // $('.vacancy__list> .owl-carousel').owlCarousel({
+        //     items: 1,
+        //     loop: true,
+        //     margin: 10,
+        //     autoWidth: true,
+        //     autoHeight: true,
+        //     dots: false,
+        //     nav: false,
+        //     responsive: {
+        //         600: {
+        //             items: 2
+        //         }
+        //     }
+        // });
+        $('.vacancies__benefits> .owl-carousel').owlCarousel({
             items: 1,
             loop: true,
             margin: 10,
-            autoWidth: true,
-            autoHeight: true,
-            dots: false,
-            nav: false,
-            responsive: {
-                600: {
-                    items: 2
-                }
-            }
-        });
-        $('.employer__list> .owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 10,
-            autoWidth: true,
-
-            autoHeight: true,
-            dots: false,
-            nav: false,
-        });
-        $('#vacancies__tab-slider').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 20,
-            autoWidth: true,
             center: true,
             dots: false,
             nav: false,
-
+            responsive: {
+                992: {
+                    items: 1
+                }
+            }
         });
+
+        $('#tips__slider').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            center: true,
+            dots: false,
+            nav: false,
+            stagePadding: 30,
+            responsive: {
+                992: {
+                    items: 1
+                }
+            }
+        });
+        // $('.employer__list> .owl-carousel').owlCarousel({
+        //     items: 1,
+        //     loop: true,
+        //     margin: 10,
+        //     autoWidth: true,
+
+        //     autoHeight: true,
+        //     dots: false,
+        //     nav: false,
+        // });
+
+        // $('#vacancies__tab-slider').owlCarousel({
+        //     items: 1,
+        //     loop: true,
+        //     margin: 20,
+        //     autoWidth: true,
+        //     center: true,
+        //     dots: false,
+        //     nav: false,
+
+        // });
 
         $('.filter_mobile_btn').click(function () {
             $('.list__filters').toggleClass('open')

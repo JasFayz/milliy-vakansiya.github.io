@@ -1,6 +1,6 @@
 .vacancies {
     &__section {
-        background    : #EFF6FC;
+        background    : #deecf9;
         padding-bottom: 50px;
         padding-top   : 60px;
     }
@@ -276,7 +276,7 @@
         }
 
         & .row-no-gutters {
-            width: calc(100% + 32px);
+            // width: calc(100% + 32px);
         }
 
         .vacancy__info {
@@ -429,11 +429,12 @@
         display        : inline-block;
         border-radius  : 50px;
         letter-spacing : -0.01em;
-        color          : #686E74;
+        color          : #0078D4;
         padding        : 8px 20px 10px 20px;
         text-decoration: none;
         transition     : all 0.3s linear;
         border         : 1px solid #0078D4;
+        background     : white;
 
         &.active {
             background: #0078D4;
