@@ -6,16 +6,28 @@
 
 @media (min-width: 1400px) {
   .container {
-    width: 1246px;
+    width: 1296px;
   }
   .container.bigger {
     width: 1326px;
+  }
+  .container.extra-big {
+    width: 1632px;
   }
 }
 
 @media (min-width: 991px) {
   .no-desktop {
     display: none !important;
+  }
+  .ten-columns > .col-md-2 {
+    width: 20%;
+  }
+  .faqs-page .desktop-faq {
+    display: block;
+  }
+  .faqs-page .panel-group.hide {
+    display: none;
   }
 }
 
@@ -40,10 +52,6 @@
   .header__top .container {
     text-align: right;
   }
-  .header__checkbox,
-  .header__quick-nav {
-    float: none;
-  }
   .header__quick-nav {
     display: inline-block;
   }
@@ -56,7 +64,7 @@
   .no-desktop {
     display: none !important;
   }
-  .header.inner .header__nav .nav li:not(.rounded, .mobile_button) {
+  .header.inner .header__nav .nav li:not(.rounded) {
     display: none;
   }
   .header.inner .header__nav .nav li.rounded {
@@ -88,14 +96,28 @@
 }
 
 @media (max-width: 991px) {
+  .faqs-page .panel-group.hide {
+    display: block !important;
+  }
   .header__logo {
     width: auto;
+  }
+  .header__quick-nav .nav li {
+    margin-right: 30px;
+  }
+  .header__quick-nav .nav li .text {
+    display: none;
+  }
+  .header__quick-nav .nav li.mobile_button button {
+    background: transparent;
+    border: none;
   }
   .header__logo .text {
     display: none;
   }
   .header__nav .nav li {
     padding-right: 20px;
+    height: initial;
   }
   .header__middle .navbar .nav {
     display: block;
@@ -189,6 +211,25 @@
   .temp-job__form .form__card .form-control.date {
     margin-bottom: 32px;
   }
+  .faq .more__link {
+    bottom: 50px;
+  }
+  .header__middle {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header__top .container {
+    text-align: left;
+  }
+  .intro {
+    min-height: 369px;
+  }
+  .intro .statistic {
+    margin-top: 36px;
+  }
+  .intro .statistic .item {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 776px) {
@@ -198,7 +239,7 @@
   .header {
     top: 0;
     background: #0078D4;
-    z-index: 5;
+    z-index: 25;
   }
   .vacancies__tab .search__form .input_setting-btn {
     right: 140px;
@@ -206,11 +247,9 @@
   .vacancies__tab .search__form .input__btn .btn .text {
     display: none;
   }
-  .header__top {
-    display: none;
-  }
   .header__nav .nav li {
     padding-left: 20px;
+    height: 97px;
   }
   .header__middle {
     padding: 0;
@@ -219,7 +258,7 @@
   .header__nav {
     padding-right: 0;
   }
-  .header__nav .nav li:not(.mobile_button) {
+  .header__middle .header__nav .nav li {
     display: none;
   }
   .header__logo .text {
@@ -333,8 +372,45 @@
     z-index: 100;
     opacity: 1;
   }
+  #vacancies__tab-slider > div {
+    display: inline-block;
+  }
+  #vacancies__tab-slider > div:nth-child(1) .card {
+    background: #EDF8E9;
+  }
+  #vacancies__tab-slider > div:nth-child(2) .card {
+    background: #F3F3F3;
+  }
+  #vacancies__tab-slider > div:nth-child(3) .card {
+    background: #FEF0F1;
+  }
+  #vacancies__tab-slider > div:nth-child(4) .card {
+    background: #FFF5EA;
+  }
+  #vacancies__tab-slider > div:nth-child(5) .card {
+    background: #EFF6FC;
+  }
+  #vacancies__tab-slider > div:nth-child(6) .card {
+    background: #EDF8E9;
+  }
   .vacancies__tab .tab-content .card {
     margin-right: 0;
+    padding: 8px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  .vacancies__tab .tab-content .card .icon {
+    display: none;
+  }
+  .vacancies__tab .tab-content .card .name {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: #0078d4;
+    height: initial;
+    text-transform: unset;
   }
   .on-mobile {
     display: block !important;
@@ -342,14 +418,16 @@
   .intro .statistic {
     display: none;
   }
-  .vacancies__tab .tab-content {
-    background: #DEECF9;
-  }
   .intro {
     padding-top: 104px;
     padding-bottom: 30px;
     background: #0078D4;
     min-height: 403px;
+    display: none;
+  }
+  .vacancies__section {
+    padding-top: 100px;
+    padding-bottom: 0;
   }
   .intro .tab-form .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -573,27 +651,122 @@
     display: block;
     width: 100%;
   }
+  .vacancies__tab .tab-content,
+  .vacancies__latest {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .vacancies__latest .vacancy__info {
+    margin-right: 0;
+  }
+  .header__select-white {
+    display: none;
+  }
+  .header__quick-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .header__quick-nav .nav li {
+    display: none;
+  }
+  .header__quick-nav .nav a .icon {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header__quick-nav .nav .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header__quick-nav .nav li.mobile_button {
+    display: block;
+  }
+  .header .search__button {
+    margin-right: 30px;
+  }
+  .vacancies__benefits {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .vacancies__latest {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .tips-n {
+    padding-bottom: 0;
+  }
+  .tips-n .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tips-n .card {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #deecf9;
+  }
+  .employers__card {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0;
+    background: #deecf9;
+  }
+  .faq .card {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0;
+    background: #deecf9;
+  }
+  .employers__section {
+    padding-bottom: 0;
+  }
+  .vacancies__tab .tab-content,
+  .vacancies__latest {
+    background: #deecf9;
+  }
+  .intro .statistic .item {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 558px) {
+  .header__top {
+    padding: 0;
+  }
   .section__title {
     text-align: left;
   }
-  .vacancies__benefits {
-    display: none;
+  .vacancies__benefits .benefit__item {
+    padding: 45px 0;
   }
   .vacancies__tab .tab-content {
-    padding: 40px 0;
+    border-radius: 0;
+    padding: 40px 15px;
+    margin-bottom: 0;
   }
   .employers__card .employers__item {
     margin-right: 0;
   }
   .vacancies__latest {
+    border-radius: 0;
     padding: 15px 11px 30px 11px;
+    margin-bottom: 32px;
   }
   .employers__card {
     padding: 15px 11px 30px 11px;
     margin-top: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0;
   }
   .employers__card:nth-child(2) {
     -webkit-box-shadow: none;
@@ -647,7 +820,8 @@
     transition: all 0.3s linear;
   }
   .intro .statistic.hiden {
-    top: -100%;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
   }
   .intro .statistic .item {
     padding: 18px 35px;
@@ -659,7 +833,7 @@
   }
   .intro .statistic__logo {
     display: block;
-    margin: 65px auto 64px auto;
+    margin: 0 auto;
   }
   .intro .statistic .swipe__btn {
     display: inline-block;
