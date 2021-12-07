@@ -26,7 +26,7 @@
   .faqs-page .desktop-faq {
     display: block;
   }
-  .faqs-page .panel-group {
+  .faqs-page .panel-group.hide {
     display: none;
   }
 }
@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 991px) {
+  .faqs-page .panel-group.hide {
+    display: block !important;
+  }
   .header__logo {
     width: auto;
   }
@@ -223,6 +226,9 @@
   }
   .intro .statistic {
     margin-top: 36px;
+  }
+  .intro .statistic .item {
+    margin-bottom: 32px;
   }
 }
 
@@ -725,6 +731,9 @@
   .vacancies__tab .tab-content,
   .vacancies__latest {
     background: #deecf9;
+  }
+  .intro .statistic .item {
+    margin-bottom: 32px;
   }
 }
 

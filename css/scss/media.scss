@@ -33,7 +33,7 @@
         display: block;
     }
 
-    .faqs-page .panel-group {
+    .faqs-page .panel-group.hide {
         display: none;
     }
 }
@@ -127,6 +127,10 @@
 }
 
 @media (max-width: 991px) {
+    .faqs-page .panel-group.hide {
+        display: block !important;
+    }
+
     .header__logo {
         width: auto;
     }
@@ -288,6 +292,11 @@
 
     .intro .statistic {
         margin-top: 36px;
+    }
+
+    .intro .statistic .item {
+        margin-bottom: 32px;
+        // display      : inline-block;
     }
 }
 
@@ -919,6 +928,10 @@
     .vacancies__latest {
         background: #deecf9;
     }
+
+    .intro .statistic .item {
+        margin-bottom: 32px;
+    }
 }
 
 @media (max-width: 558px) {
@@ -1026,6 +1039,8 @@
         z-index   : 20;
         transition: all 0.3s linear;
     }
+
+
 
     .intro .statistic.hiden {
         transform: translateY(-200%);
