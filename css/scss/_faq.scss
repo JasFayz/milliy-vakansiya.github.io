@@ -98,12 +98,13 @@
     padding-bottom: 299px;
 
     & .section__title {
-        text-align    : left;
-        font          : normal normal 600 32px/42px 'Segoe UI';
-        letter-spacing: -1.6px;
-        color         : #0078D4;
-        text-transform: none;
-        margin-bottom : 30px;
+        font-family: "Segoe UI";
+        font-weight: bold;
+        font-size  : 24px;
+        line-height: 17px;
+        text-align : center;
+        color      : #333;
+
     }
 
     & .nav {
@@ -194,6 +195,7 @@
     & .desktop-faq {
         display: none;
     }
+
     & .panel-group {
         display: block;
     }

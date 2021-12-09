@@ -35,27 +35,27 @@ $(document).ready(function () {
         });
     })
 
-    $('.type-carousel').owlCarousel({
-        items: 2,
-        loop: true,
-        margin: 10,
-        autoWidth: true,
-        dots: false,
-        nav: false,
-        autoHeight: true,
-        center: true,
-        navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
-        responsive: {
-            600: {
-                items: 6,
-                nav: false,
-            },
-            991: {
-                items: 6,
-                nav: true
-            }
-        }
-    });
+    // $('.type-carousel').owlCarousel({
+    //     items: 2,
+    //     loop: true,
+    //     margin: 10,
+    //     autoWidth: true,
+    //     dots: false,
+    //     nav: false,
+    //     autoHeight: true,
+    //     center: true,
+    //     navText: ["<div class='prev-btn'><img src='./image/icon_prev-btn.svg' width='30'></div>", "<div class='next-btn'><img src='./image/icon_next-btn.svg' width='30'></div>"],
+    //     responsive: {
+    //         600: {
+    //             items: 6,
+    //             nav: false,
+    //         },
+    //         991: {
+    //             items: 6,
+    //             nav: true
+    //         }
+    //     }
+    // });
 
     $('.tips-carousel').owlCarousel({
         loop: true,

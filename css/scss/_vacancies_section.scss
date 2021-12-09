@@ -423,6 +423,8 @@
 
 .type-slider {
     padding-left : 40px;
+    padding-right: 40px;
+
     margin-bottom: 40px;
 
     & .type_item {
@@ -435,6 +437,12 @@
         transition     : all 0.3s linear;
         border         : 1px solid #0078D4;
         background     : white;
+        margin-right   : 10px;
+
+        &:focus {
+            border : 1px solid #0078D4;
+            outline: none;
+        }
 
         &.active {
             background: #0078D4;
@@ -488,5 +496,19 @@
                 background: white;
             }
         }
+    }
+
+    & .splide__arrow {
+        background: white;
+    }
+
+    & .splide__arrow--prev {
+        left      : -40px;
+        box-shadow: -14px 0px 10px 12px rgba(255, 255, 255, 1);
+    }
+
+    & .splide__arrow--next {
+        right     : -40px;
+        box-shadow: -14px 0px 10px 12px rgba(255, 255, 255, 1);
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 1921px) {
   .header__nav .nav-link {
     padding: 16px 28px;
@@ -229,6 +230,21 @@
   }
   .intro .statistic .item {
     margin-bottom: 32px;
+  }
+  .type-slider {
+    padding: 0;
+  }
+  .type-slider .splide__arrows {
+    display: none;
+  }
+  .vacancies__latest .vacancy__info {
+    margin-right: 0;
+  }
+  .employers__card .employers__item {
+    margin-right: 0;
+  }
+  .vacancies__latest {
+    padding: 15px 22px 30px 22px;
   }
 }
 
@@ -717,6 +733,7 @@
             box-shadow: none;
     margin-bottom: 0;
     background: #EFF6FC;
+    padding: 5px 22px 30px 22px;
   }
   .faq .card {
     border-radius: 0;
@@ -724,9 +741,23 @@
             box-shadow: none;
     margin-bottom: 0;
     background: #EFF6FC;
+    padding-left: 22px;
+    padding-right: 22px;
   }
   .employers__section {
     padding-bottom: 0;
+  }
+  .employers__section .faqs-page .panel-default {
+    margin-top: 10px;
+  }
+  .employers__section .faqs-page .panel-title a {
+    border-color: #0078D4;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .employers__section .faqs-page .panel-title a:hover {
+    background: #EFF6FC url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='contact_support_black_24dp_1_' data-name='contact_support_black_24dp (1)' width='25.753' height='25.753' viewBox='0 0 50.753 50.753'%3E%3Cpath id='Контур_15673' data-name='Контур 15673' d='M0,0H50.753V50.753H0Z' fill='none'/%3E%3Cpath id='Контур_15674' data-name='Контур 15674' d='M21.032,48.771V41.158A20.093,20.093,0,1,1,42.179,21.09c0,10.468-7.275,21-18.123,26.222ZM22.09,5.229a15.86,15.86,0,1,0,0,31.721h3.172v4.864C32.959,36.95,37.95,28.956,37.95,21.09A15.866,15.866,0,0,0,22.09,5.229ZM19.975,29.549H24.2v4.229H19.975ZM24.2,26.376H19.975c0-6.873,6.344-6.344,6.344-10.574a4.229,4.229,0,1,0-8.459,0H13.631a8.459,8.459,0,1,1,16.918,0C30.549,21.09,24.2,21.618,24.2,26.376Z' transform='translate(2.229 1.115)' fill='%230078d4'/%3E%3C/svg%3E") no-repeat 22px 50%;
   }
   .vacancies__tab .tab-content,
   .vacancies__latest {
@@ -752,16 +783,13 @@
     padding: 40px 15px;
     margin-bottom: 0;
   }
-  .employers__card .employers__item {
-    margin-right: 0;
-  }
   .vacancies__latest {
+    padding: 15px 22px 30px 22px;
     border-radius: 0;
-    padding: 15px 11px 30px 11px;
     margin-bottom: 32px;
   }
   .employers__card {
-    padding: 15px 11px 30px 11px;
+    padding: 5px 22px 30px 22px;
     margin-top: 0;
     border-radius: 0;
     -webkit-box-shadow: none;
